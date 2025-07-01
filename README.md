@@ -3,7 +3,7 @@
 ## 📝 **Project Overview**
 
 This project is designed for **automated testing of TestRail** using both **API and UI tests**. 
-The goal is to verify TestRail core functionalities, integrate API and UI automation, and build 
+The goal is to verify TestRail core functionalities and build 
 a fully functional framework for practical QA application.
 
 ---
@@ -33,11 +33,12 @@ a fully functional framework for practical QA application.
 ---
 
 ✅ Project Test Scope
+
 🔗 API Tests: Projects Management
-✔️ GET /projects – Get all projects
-✔️ POST /projects – Create a new project
-✔️ PUT /projects/{id} – Update existing project
-✔️ DELETE /projects/{id} – Delete a project
+- GET /projects – Get all projects
+- POST /projects – Create a new project
+- PUT /projects/{id} – Update existing project
+- DELETE /projects/{id} – Delete a project
 
 🖥️ UI Tests: Test Cases Management
 ✔️ Login Page
