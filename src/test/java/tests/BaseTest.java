@@ -42,7 +42,7 @@ public class BaseTest {
   @BeforeMethod(description = "Setup browser")
   public void setup(@Optional("chrome") String browser) {
 
-    // Configuration.headless = true;
+    Configuration.headless = true;
     Configuration.timeout = 20000;
     Configuration.clickViaJs = false;
     Configuration.baseUrl = "https://testprojectchatyrka.testrail.io/";
