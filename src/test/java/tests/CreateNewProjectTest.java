@@ -26,7 +26,7 @@ public class CreateNewProjectTest extends BaseTest {
   }
 
   @Test(description = "Successful creation new project")
-  public void testNewProjectShownOnDashboardPage() {
+  public void testNewProjectIsShownOnDashboardPage() {
     Project project = new ProjectFactory().newProject();
     loginPage
         .openLoginPage()

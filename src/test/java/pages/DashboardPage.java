@@ -4,6 +4,7 @@ import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
+import static org.aspectj.bridge.Version.getText;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
@@ -38,8 +39,8 @@ public class DashboardPage extends BasePage {
 
   @Step("Checking  the project is created")
   public String getCreatedProjectName(String projectName) {
-    log.info("Checking if the Projects page is created");
-    return $(byText(projectName)).getText();
+    log.info("Checking if the Project is created");
+    return $$(byText(projectName)).filter(Condition.visible).first().getText();
   }
 
   @Step("Opening  the project")
