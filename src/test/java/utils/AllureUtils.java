@@ -1,20 +1,15 @@
 package utils;
 
-import com.codeborne.selenide.Screenshots;
-import io.qameta.allure.Attachment;
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
-import java.io.IOException;
-import java.nio.file.Files;
+import io.qameta.allure.Attachment;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 public class AllureUtils {
 
     @Attachment(value = "screenshot", type = "image/png")
     public static byte[] takeScreenshot() {
-        try {
-            return Files.readAllBytes(Screenshots.takeScreenShotAsFile().toPath());
-        } catch (IOException e) {
-            e.printStackTrace();
-            return new byte[0];
-        }
+        return ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);
     }
 }

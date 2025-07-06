@@ -37,7 +37,6 @@ public class LoginTest extends BaseTest {
     assertEquals(loginPage.getErrorMessageWhenInvalidCredentials(), loginPage.getLOGIN_ERROR_MESSAGE());
   }
 
-
   @Test(description = "Unsuccessful log in with empty email")
   public void testInvalidLoginWithEmptyEmail() {
     loginPage

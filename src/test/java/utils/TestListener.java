@@ -2,10 +2,7 @@ package utils;
 
 import java.util.concurrent.TimeUnit;
 
-import static utils.AllureUtils.takeScreenshot;
-
 import lombok.extern.log4j.Log4j2;
-import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -28,8 +25,6 @@ public class TestListener implements ITestListener {
     public void onTestFailure(ITestResult iTestResult) {
         log.info("======================================== FAILED TEST {} Duration:  {} ========================================%n", iTestResult.getName(),
                 getExecutionTime(iTestResult));
-        ITestContext context = iTestResult.getTestContext();
-        WebDriver driver = (WebDriver) context.getAttribute("driver");
         AllureUtils.takeScreenshot();
     }
 

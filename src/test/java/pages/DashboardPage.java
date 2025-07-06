@@ -1,7 +1,10 @@
 package pages;
 
 import static com.codeborne.selenide.Configuration.baseUrl;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
+
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Step;
@@ -20,10 +23,29 @@ public class DashboardPage extends BasePage {
     return this;
   }
 
-  @Step("Waiting till the dashboard page is opened")
+  @Step("Checking the dashboard page is opened")
   public boolean isDashboardPageOpened() {
-    log.info("Checking if the Projects page is opened");
+    log.info("Checking if the dashboard page is opened");
     return $(ADD_PROJECT_BUTTON_ID).isDisplayed();
   }
 
+  @Step("Click to 'ADD Project' button")
+  public AddProjectPage clickAddProjectButton() {
+    log.info("Clicking 'ADD Project' button");
+    $(ADD_PROJECT_BUTTON_ID).click();
+    return new AddProjectPage();
+  }
+
+  @Step("Checking  the project is created")
+  public String getCreatedProjectName(String projectName) {
+    log.info("Checking if the Projects page is created");
+    return $(byText(projectName)).getText();
+  }
+
+  @Step("Opening  the project")
+  public ProjectOverviewPage openProject(String projectName) {
+    log.info("Opening the Project");
+    $$(byText(projectName)).filter(Condition.visible).first().click();
+    return new ProjectOverviewPage();
+  }
 }

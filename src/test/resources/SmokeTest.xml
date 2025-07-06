@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Testrail Smoke Test" parallel="tests">
+    <listeners>
+        <listener class-name="tests.base.TestListener"></listener>
+        <listener class-name="tests.base.AnnotationTransformer"></listener>
+    </listeners>
+    <test name="Thread #1">
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.SuiteTest"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="Thread #2">
+        <classes>
+            <class name="tests.TestCaseTest"/>
+            <class name="tests.ProjectTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite>
