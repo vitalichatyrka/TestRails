@@ -49,8 +49,8 @@ public class BaseTest {
 
     SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true));
 
-    user = System.getProperty("user", PropertyReader.getProperty("user"));
-    password = System.getProperty("password", PropertyReader.getProperty("password"));
+    user = System.getProperty("testrailUser", PropertyReader.getProperty("user"));
+    password = System.getProperty("testrailPassword", PropertyReader.getProperty("password"));
 
     loginPage = new LoginPage();
     dashboardPage = new DashboardPage();
