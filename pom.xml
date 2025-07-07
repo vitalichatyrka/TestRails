@@ -13,7 +13,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <testng.version>7.11.0</testng.version>
-        <suitXmlFile>src/test/resources/CrossBrowserTest.xml</suitXmlFile>
+        <suitXmlFile>src/test/resources/RegressionTest.xml</suitXmlFile>
         <assertj.version>4.0.0-M1</assertj.version>
         <selenide.version>7.9.3</selenide.version>
         <surefire.version>3.5.3</surefire.version>
@@ -122,14 +122,14 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${surefire.version}</version>
-                <!--                <configuration>
+                               <configuration>
                                     <suiteXmlFiles>
                                         <suiteXmlFile>${suitXmlFile}</suiteXmlFile>
                                     </suiteXmlFiles>
                                     <argLine>
                                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                                     </argLine>
-                                </configuration>-->
+                                </configuration>
             </plugin>
             <plugin>
                 <groupId>io.qameta.allure</groupId>

@@ -4,6 +4,7 @@ import dto.Project;
 import dto.ProjectFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import tests.BaseTest;
 
 public class CreateNewProjectTest extends BaseTest {
@@ -24,6 +25,7 @@ public class CreateNewProjectTest extends BaseTest {
     softAssert.assertEquals(projectsPage.getSuccessMessageAboutProjectCreation(),
         "Successfully added the new project.",
         "Successful notification is not shown or is not correct");
+    softAssert.assertAll();
   }
 
   @Test(description = "Successful creation new project")

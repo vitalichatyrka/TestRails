@@ -21,7 +21,7 @@ public class ProjectsTest extends BaseTest {
     projectsAdapter.createNewProject(project);
   }
 
-  @Test(description = "Delete  project")
+  @Test(description = "Delete project")
   public void testDeleteProject() {
     Project project = new ProjectFactory().newProject();
     Response createResponse = projectsAdapter.createNewProject(project);

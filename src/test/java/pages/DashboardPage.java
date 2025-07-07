@@ -19,8 +19,8 @@ public class DashboardPage extends BasePage {
 
   @Step("Opening the 'Dashboard Page'")
   public DashboardPage open() {
-    log.info("Open 'Dashboard Page' by link: " + baseUrl + "index.php?/dashboard");
-    Selenide.open("index.php?/dashboard");
+    log.info("Open 'Dashboard Page' by link: " + baseUrl + DASHBOARD_URL);
+    Selenide.open(DASHBOARD_URL);
     return this;
   }
 

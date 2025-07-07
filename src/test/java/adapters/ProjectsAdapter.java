@@ -1,5 +1,9 @@
 package adapters;
 
+import static pages.BasePage.CREATE_PROJECT_ENDPOINT;
+import static pages.BasePage.DELETE_PROJECT_ENDPOINT;
+import static pages.BasePage.GET_PROJECTS_ENDPOINT;
+
 import dto.Project;
 import io.restassured.response.Response;
 
@@ -9,7 +13,7 @@ public class ProjectsAdapter extends BaseAdapter {
     Response response = request.
         body(project).
         when().
-        post(BASE_API_URL + "index.php?/api/v2/add_project").
+        post(BASE_API_URL + CREATE_PROJECT_ENDPOINT).
         then().
         log().ifValidationFails().
         statusCode(200)
@@ -20,19 +24,18 @@ public class ProjectsAdapter extends BaseAdapter {
   public void getAllProjects() {
     request.
         when().
-        get(BASE_API_URL + "index.php?/api/v2/get_projects").
+        get(BASE_API_URL + GET_PROJECTS_ENDPOINT).
         then().
         log().ifValidationFails().
         statusCode(200);
   }
 
-  public void deleteProject(String code) {
+  public void deleteProject(String idOfProject) {
     request.
         when().
-        post(BASE_API_URL + "index.php?/api/v2/delete_project/" + code).
+        post(BASE_API_URL + DELETE_PROJECT_ENDPOINT + idOfProject).
         then().
         log().ifValidationFails().
         statusCode(200);
   }
-
 }

@@ -22,7 +22,8 @@ public class LoginPage extends BasePage {
       EMAIL_REQUIRED_ERROR_MESSAGE = "Email/Login is required.",
       PASSWORD_REQUIRED_ERROR = "Password is required.",
       LOGIN_ERROR_MESSAGE = "Sorry, there was a problem." +
-          "Email/Login or Password is incorrect. Please try again.";
+          "Email/Login or Password is incorrect. Please try again.",
+      REQUIRED_FIELD_ERROR_XPATH = "//div[@class='loginpage-message-image loginpage-message ']";
 
   public LoginPage() {
     super();
@@ -61,14 +62,14 @@ public class LoginPage extends BasePage {
 
   @Step("Get an error message about required email.")
   public String getErrorMessageAboutRequiredEmail() {
-    String requiredErrorMessage = $x("//div[@class='loginpage-message-image loginpage-message ']").getText();
+    String requiredErrorMessage = $x(REQUIRED_FIELD_ERROR_XPATH).getText();
     log.info("Getting error message '{}'", requiredErrorMessage);
     return requiredErrorMessage;
   }
 
   @Step("Get an error message about required password.")
   public String getErrorMessageAboutRequiredPassword() {
-    String requiredErrorMessage = $x("//div[@class='loginpage-message-image loginpage-message ']").getText();
+    String requiredErrorMessage = $x(REQUIRED_FIELD_ERROR_XPATH).getText();
     log.info("Getting error message '{}'", requiredErrorMessage);
     return requiredErrorMessage;
   }

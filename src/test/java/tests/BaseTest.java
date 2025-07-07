@@ -1,8 +1,5 @@
 package tests;
 
-import static com.codeborne.selenide.Selenide.closeWebDriver;
-import static com.codeborne.selenide.Selenide.screenshot;
-
 import adapters.ProjectsAdapter;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
@@ -49,6 +46,7 @@ public class BaseTest {
     Configuration.clickViaJs = false;
     Configuration.baseUrl = "https://testprojectchatyrka.testrail.io/";
     Configuration.browserSize = "1920x1080";
+
     SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true));
 
     user = System.getenv().getOrDefault("user", PropertyReader.getProperty("user"));
@@ -67,9 +65,5 @@ public class BaseTest {
 
   @AfterMethod(alwaysRun = true, description = "Closing browser")
   public void tearDown(ITestResult result) {
-    if (ITestResult.FAILURE == result.getStatus()) {
-      screenshot("failure_" + result.getName());
-    }
-    closeWebDriver();
   }
 }
