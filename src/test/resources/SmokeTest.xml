@@ -7,13 +7,13 @@
     </listeners>
     <test name="Thread #1">
         <classes>
-            <class name="tests.LoginTest"/>
+            <class name="tests.ui.LoginTest"/>
             <class name="tests.SuiteTest"/>
         </classes>
     </test> <!-- Test -->
     <test name="Thread #2">
         <classes>
-            <class name="tests.TestCaseTest"/>
+            <class name="tests.ui.TestCaseTest"/>
             <class name="tests.ProjectTest"/>
         </classes>
     </test> <!-- Test -->

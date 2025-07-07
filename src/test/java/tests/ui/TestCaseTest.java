@@ -1,4 +1,4 @@
-package tests;
+package tests.ui;
 
 import dto.Project;
 import dto.ProjectFactory;
@@ -6,6 +6,7 @@ import dto.TestCase;
 import dto.TestCaseFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import tests.BaseTest;
 
 
 public class TestCaseTest extends BaseTest {

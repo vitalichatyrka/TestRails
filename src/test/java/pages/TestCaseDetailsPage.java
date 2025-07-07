@@ -12,7 +12,10 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 public class TestCaseDetailsPage extends BasePage {
 
-  private final String SUCCESSFUL_NOTIFICATION_XPATH = "//div[@class='message message-success']";
+  private final String SUCCESSFUL_NOTIFICATION_XPATH = "//div[@class='message message-success']",
+      STEPS_VALUE_XPATH = "",
+      PRECONDITIONS_VALUE_XPATH = "",
+      PRIORITY_VALUE_XPATH = "";
 
 
   @Step("Getting  successful message about test case creation or updation")

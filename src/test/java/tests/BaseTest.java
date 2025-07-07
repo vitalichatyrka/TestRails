@@ -3,6 +3,7 @@ package tests;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.screenshot;
 
+import adapters.ProjectsAdapter;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import com.github.javafaker.Faker;
@@ -26,17 +27,18 @@ import utils.TestListener;
 
 @Listeners(TestListener.class)
 public class BaseTest {
-  Faker faker = new Faker();
-  LoginPage loginPage;
-  DashboardPage dashboardPage;
-  AddProjectPage addProjectPage;
-  ProjectsPage projectsPage;
-  String user;
-  String password;
-  SoftAssert softAssert;
-  ProjectOverviewPage projectOverviewPage;
-  TestCaseDetailsPage testCaseDetailsPage;
-  TestCasesOverviewPage testCasesOverviewPage;
+  protected Faker faker = new Faker();
+  protected LoginPage loginPage;
+  protected DashboardPage dashboardPage;
+  protected AddProjectPage addProjectPage;
+  protected ProjectsPage projectsPage;
+  protected String user;
+  protected String password;
+  protected SoftAssert softAssert;
+  protected ProjectOverviewPage projectOverviewPage;
+  protected TestCaseDetailsPage testCaseDetailsPage;
+  protected TestCasesOverviewPage testCasesOverviewPage;
+  protected ProjectsAdapter projectsAdapter;
 
   @Parameters({"browser"})
   @BeforeMethod(description = "Setup browser")
@@ -60,7 +62,7 @@ public class BaseTest {
     projectOverviewPage = new ProjectOverviewPage();
     testCaseDetailsPage = new TestCaseDetailsPage();
     testCasesOverviewPage = new TestCasesOverviewPage();
-
+    projectsAdapter = new ProjectsAdapter();
   }
 
   @AfterMethod(alwaysRun = true, description = "Closing browser")

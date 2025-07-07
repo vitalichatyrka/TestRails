@@ -1,9 +1,10 @@
-package tests;
+package tests.ui;
 
 import dto.Project;
 import dto.ProjectFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import tests.BaseTest;
 
 public class DashboardTest extends BaseTest {
 

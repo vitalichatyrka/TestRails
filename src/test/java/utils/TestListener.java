@@ -2,6 +2,7 @@ package utils;
 
 import java.util.concurrent.TimeUnit;
 
+import com.codeborne.selenide.WebDriverRunner;
 import lombok.extern.log4j.Log4j2;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -25,7 +26,9 @@ public class TestListener implements ITestListener {
     public void onTestFailure(ITestResult iTestResult) {
         log.info("======================================== FAILED TEST {} Duration:  {} ========================================%n", iTestResult.getName(),
                 getExecutionTime(iTestResult));
-        AllureUtils.takeScreenshot();
+        if (WebDriverRunner.hasWebDriverStarted()) {
+            AllureUtils.takeScreenshot();
+        }
     }
 
     @Override
