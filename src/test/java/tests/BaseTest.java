@@ -1,11 +1,14 @@
 package tests;
 
+import java.util.UUID;
+
 import adapters.ProjectsAdapter;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import com.github.javafaker.Faker;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -41,6 +44,17 @@ public class BaseTest {
   @Parameters({"browser"})
   @BeforeMethod(description = "Setup browser")
   public void setup(@Optional("chrome") String browser) {
+
+    ChromeOptions options = new ChromeOptions();
+
+    options.addArguments("--headless=new");
+    options.addArguments("--no-sandbox");
+    options.addArguments("--disable-dev-shm-usage");
+    options.addArguments("--disable-gpu");
+
+    options.addArguments("--user-data-dir=/tmp/profile-" + UUID.randomUUID());
+
+    Configuration.browserCapabilities = options;
 
     Configuration.headless = false;
     Configuration.timeout = 20000;
