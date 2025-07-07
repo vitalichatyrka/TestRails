@@ -15,6 +15,10 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    env:
+      USER: ${{secrets.TEST_RAILS_USER}}
+      PASS: ${{secrets.TEST_RAILS_PASSWORD}}
+
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 17
