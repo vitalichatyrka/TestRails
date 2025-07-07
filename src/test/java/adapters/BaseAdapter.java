@@ -13,10 +13,13 @@ public class BaseAdapter {
   RequestSpecification request;
 
   public BaseAdapter() {
-    request = given().
-        contentType(ContentType.JSON).
-        auth().preemptive()
-        .basic(System.getenv().getOrDefault("testrailUser", PropertyReader.getProperty("user")),
-            System.getenv().getOrDefault("testrailApiKey", PropertyReader.getProperty("password"))).log().all();
+    request = given()
+        .contentType(ContentType.JSON)
+        .auth().preemptive()
+        .basic(
+            System.getProperty("testrailUser", PropertyReader.getProperty("user")),
+            System.getProperty("testrailApiKey", PropertyReader.getProperty("password"))
+        )
+        .log().all();
   }
 }
