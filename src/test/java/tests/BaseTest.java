@@ -2,6 +2,7 @@ package tests;
 
 import adapters.ProjectsAdapter;
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import com.github.javafaker.Faker;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -41,7 +42,7 @@ public class BaseTest {
   @BeforeMethod(description = "Setup browser")
   public void setup(@Optional("chrome") String browser) {
 
-    Configuration.headless = true;
+    Configuration.headless = false;
     Configuration.timeout = 20000;
     Configuration.clickViaJs = false;
     Configuration.baseUrl = "https://testprojectchatyrka.testrail.io/";
@@ -65,5 +66,6 @@ public class BaseTest {
 
   @AfterMethod(alwaysRun = true, description = "Closing browser")
   public void tearDown(ITestResult result) {
+    Selenide.closeWebDriver();
   }
 }
