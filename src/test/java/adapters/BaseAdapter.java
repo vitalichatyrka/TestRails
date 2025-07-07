@@ -18,7 +18,7 @@ public class BaseAdapter {
         .auth().preemptive()
         .basic(
             System.getProperty("testrailUser", PropertyReader.getProperty("user")),
-            System.getProperty("testrailApiKey", PropertyReader.getProperty("password"))
+            System.getProperty("testrailPassword", PropertyReader.getProperty("password"))
         )
         .log().all();
   }
