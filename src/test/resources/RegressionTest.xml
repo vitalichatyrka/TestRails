@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Testrail Regression Test" parallel="tests">
+    <listeners>
+        <listener class-name="utils.TestListener"></listener>
+        <listener class-name="utils.AnnotationTransformer"></listener>
+    </listeners>
+    <test name="API regression">
+        <classes>
+            <class name="tests.api.ProjectsTest"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="UI regression">
+        <classes>
+            <class name="tests.ui.CreateNewProjectTest"/>
+            <class name="tests.ui.DashboardTest"/>
+            <class name="tests.ui.LoginTest"/>
+            <class name="tests.ui.TestCaseTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite>
