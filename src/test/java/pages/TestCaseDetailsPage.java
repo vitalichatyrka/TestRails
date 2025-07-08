@@ -17,13 +17,11 @@ public class TestCaseDetailsPage extends BasePage {
       PRECONDITIONS_VALUE_XPATH = "",
       PRIORITY_VALUE_XPATH = "";
 
-
   @Step("Getting  successful message about test case creation or updation")
   public String getSuccessMessage() {
     log.info("Getting  successful message about test case creation or updation");
     return $x(SUCCESSFUL_NOTIFICATION_XPATH).getText();
   }
-
 
   @Step("Click to 'Edit'  button")
   public EditTestCasePage clickEditButton() {

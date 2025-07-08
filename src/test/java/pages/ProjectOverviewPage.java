@@ -11,9 +11,7 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 public class ProjectOverviewPage extends BasePage {
 
-
   private final String PROJECT_TITLE_XPATH = "//div[@class='content-header-title page_title']";
-
 
   @Step("Getting project title on the project overview page")
   public String getProjectTitle() {

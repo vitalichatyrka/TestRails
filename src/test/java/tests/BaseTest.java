@@ -62,7 +62,10 @@ public class BaseTest {
     Configuration.baseUrl = "https://testprojectchatyrka.testrail.io/";
     Configuration.browserSize = "1920x1080";
 
-    SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true));
+    SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
+        .screenshots(false)
+        .savePageSource(true)
+    );
 
     user = System.getProperty("testrailUser", PropertyReader.getProperty("user"));
     password = System.getProperty("testrailPassword", PropertyReader.getProperty("password"));

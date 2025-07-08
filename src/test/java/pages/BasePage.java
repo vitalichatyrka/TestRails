@@ -6,9 +6,7 @@ public abstract class BasePage {
       GET_PROJECTS_ENDPOINT = "index.php?/api/v2/get_projects",
       CREATE_PROJECT_ENDPOINT = "index.php?/api/v2/add_project",
       DASHBOARD_URL = "index.php?/dashboard",
-      PROGECTS_URL = "/index.php?/admin/projects/overview";
-
-
+      PRJECTS_URL = "/index.php?/admin/projects/overview";
 
   public BasePage() {
 

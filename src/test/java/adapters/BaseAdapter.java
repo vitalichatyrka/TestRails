@@ -2,6 +2,8 @@ package adapters;
 
 import static io.restassured.RestAssured.given;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import utils.PropertyReader;

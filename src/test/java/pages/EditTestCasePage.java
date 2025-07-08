@@ -14,7 +14,6 @@ public class EditTestCasePage extends BasePage {
 
   private final String ADD_TEST_CASE_XPATH = "//button[@id='accept']";
 
-
   @Step("Opening the 'Edit test case' page")
   public EditTestCasePage isPageOpened() {
     $x(ADD_TEST_CASE_XPATH).shouldBe(Condition.visible);

@@ -31,8 +31,8 @@ public class ProjectsPage extends BasePage {
 
   @Step("Opening Projects page")
   public ProjectsPage openProjectsPage() {
-    log.info("Opening Projects page {}", baseUrl + PROGECTS_URL);
-    Selenide.open(baseUrl + PROGECTS_URL);
+    log.info("Opening Projects page {}", baseUrl + PRJECTS_URL);
+    Selenide.open(baseUrl + PRJECTS_URL);
     return this;
   }
 }
