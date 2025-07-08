@@ -19,12 +19,34 @@ public class CreateNewProjectTest extends BaseTest {
     dashboardPage.clickAddProjectButton()
         .fillProjectFields(project)
         .clickAddProjectButton();
-    softAssert.assertEquals(projectsPage.getCreatedProjectName(project.getName()), project.getName(),
-        "Created project is not found in the projects list");
+    dashboardPage.open()
+            .isDashboardPageOpened();
+    dashboardPage.clickAddProjectButton()
+            .fillProjectFields(project)
+                .clickAddProjectButton();
     softAssert.assertEquals(projectsPage.getSuccessMessageAboutProjectCreation(),
         "Successfully added the new project.",
         "Successful notification is not shown or is not correct");
+    softAssert.assertEquals(projectsPage.getCreatedProjectName(project.getName()), project.getName(),
+        "Created project is not found in the projects list");
     softAssert.assertAll();
+  }
+
+  @Test(description = "Successful creation new project")
+  public void testFirstProjectCreate() {
+    Project project = new ProjectFactory().newProject();
+    projectCleaner.deleteAllProjects();
+    loginPage
+        .openLoginPage()
+        .isPageOpened()
+        .login(user, password)
+        .isDashboardPageOpened();
+    dashboardPage.clickAddProjectButton()
+        .fillProjectFields(project)
+        .clickAddProjectButton();
+    Assert.assertEquals(projectOverviewPage.getSuccessMessageAboutFirstProjectCreation(),
+        "Congratulations! You have created your first project",
+        "Successful notification is not shown or is not correct");
   }
 
   @Test(description = "Successful creation new project")

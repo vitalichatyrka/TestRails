@@ -12,7 +12,7 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 public class ProjectsPage extends BasePage {
 
-  private final String SUCCESSFUL_NOTIFICATION_XPATH = "//div[@data-testid='messageSuccessDivBox']";
+  private final String SUCCESSFUL_NOTIFICATION_XPATH = "//div[@class='message message-success']";
 
   public ProjectsPage() {
   }

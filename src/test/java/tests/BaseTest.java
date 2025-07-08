@@ -1,6 +1,7 @@
 package tests;
 
 import api.adapters.ProjectsAdapter;
+import api.helpers.ProjectCleaner;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
@@ -38,6 +39,7 @@ public class BaseTest {
   protected TestCaseDetailsPage testCaseDetailsPage;
   protected TestCasesOverviewPage testCasesOverviewPage;
   protected ProjectsAdapter projectsAdapter;
+  protected ProjectCleaner projectCleaner;
 
   @Parameters({"browser"})
   @BeforeMethod(description = "Setup browser")
@@ -75,10 +77,12 @@ public class BaseTest {
     testCaseDetailsPage = new TestCaseDetailsPage();
     testCasesOverviewPage = new TestCasesOverviewPage();
     projectsAdapter = new ProjectsAdapter();
+    projectCleaner = new ProjectCleaner();
   }
 
   @AfterMethod(alwaysRun = true, description = "Closing browser")
   public void tearDown(ITestResult result) {
+    projectCleaner.deleteAllProjects();
     Selenide.closeWebDriver();
   }
 }

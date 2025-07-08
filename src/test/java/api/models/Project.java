@@ -15,4 +15,7 @@ public class Project {
   @SerializedName("announcement")
   @Expose
   String announcement;
+  @SerializedName("id")
+  @Expose
+  int id;
 }
