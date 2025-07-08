@@ -52,8 +52,6 @@ public class BaseTest {
     options.addArguments("--disable-dev-shm-usage");
     options.addArguments("--disable-gpu");
 
-    //options.addArguments("--user-data-dir=/tmp/profile-" + UUID.randomUUID());
-
     Configuration.browserCapabilities = options;
 
     Configuration.headless = false;
