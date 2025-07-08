@@ -4,7 +4,6 @@ import dto.Project;
 import dto.ProjectFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 import tests.BaseTest;
 
 public class CreateNewProjectTest extends BaseTest {
