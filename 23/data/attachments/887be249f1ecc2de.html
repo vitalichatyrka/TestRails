@@ -1,0 +1,3437 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval' https://static.testrail-staging.com https://static.testrail.com https://static.testrail.io https://cdn.pendo.io https://data.pendo.io https://app.pendo.io https://pendo-static-5699730914541568.storage.googleapis.com https://cdn.embedly.com ; style-src 'self' 'unsafe-inline' https://static.testrail-staging.com https://static.testrail.com https://static.testrail.io https://pendo-static-5699730914541568.storage.googleapis.com ; style-src-elem 'self' 'unsafe-inline' https://static.testrail-staging.com https://static.testrail.com https://static.testrail.io https://pendo-static-5699730914541568.storage.googleapis.com ; style-src-attr 'self' 'unsafe-inline'  ; font-src 'self' https://fonts.gstatic.com https://static.testrail-staging.com https://static.testrail.com https://static.testrail.io ; connect-src 'self' https://app.pendo.io https://data.pendo.io https://pendo-static-5699730914541568.storage.googleapis.com https://jira-oauth-broker.p.testrail.io/ ; media-src *  ; object-src 'none'  ; worker-src 'none'  ; base-uri 'self'  ; frame-src 'self' https://app.pendo.io https://*.testrail-staging.com https://*.testrail.com https://*.testrail.io http://*.eu-central-1.compute.amazonaws.com https://*.testrail.net ; child-src  https://app.pendo.io ;">
+	<title>Add Test Case - TestRail</title>
+		<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.0.1080/css/jquery.ui.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.0.1080/css/fancybox.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.0.1080/css/chosen.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.0.1080/css/dropzone.css" media="all">
+						<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.0.1080/css/app-modern-combined.css" media="all">
+				<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.0.1080/css/font.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.0.1080/css/drilldown.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.0.1080/css/brand/style.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.0.1080/css/brand/brand-modern.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.0.1080/css/assembla.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.0.1080/css/banner-enterprise-modern.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.0.1080/css/application.autocomplete.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.0.1080/css/input-autocomplete.css" media="all">
+    <link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.0.1080/css/application.input_symbols_counter.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.0.1080/css/jquery.data-tables.min.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.0.1080/css/fixed-columns.data-tables.min.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.0.1080/css/application.datasets.css" media="all">
+    	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.0.1080/css/autocomplete.css" media="all">
+	
+	<link rel="shortcut icon" href="https://static.testrail.io/9.3.0.1080/images/favicon.ico">
+	<script async="" src="https://cdn.pendo.io/agent/static/1c20428c-1995-4c00-6e1c-daff12af9c00/pendo.js"></script><script type="text/javascript" src="https://static.testrail.io/9.3.0.1080/js/bundle/common-deps-header.js"></script>
+			<script type="text/javascript" src="https://static.testrail.io/9.3.0.1080/js/fusioncharts.theme.fusion.js"></script><style type="text/css">@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu3cOWxw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu3cOWxw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ft calendar customization */
+.fc-cal-date-normal-fusion {
+  color: #5F5F5F;
+  font-family: 'Source Sans Pro';
+  font-size: 11px;
+}
+
+.fc-cal-date-selected-fusion {
+  color: #FEFEFE;
+  font-family: 'Source Sans Pro SemiBold';
+  font-size: 11px;
+}</style>
+			<script type="text/javascript">
+			var _0x172b=['915521FAOgwP','1WUUTor','85768HrInlH','1VBoajH','701113SlGqlh','596675VFZSmj','430136IMhboy','iyE4qlbA7A3C4A2F1D1I1B1A2A3B1B3fqyH2B7C-16xvhyA2E1lduC7E2B4E2F2G2C1B10B2D1E6C1E1E3E1G2c1D-16yC2A3E2yD1J2B3lozD1B1G4da1wB9B6C6dG-10A-8D3J2A9B1A8C7E1E5A2A1A1sB-22uE2D6G1F1H-8H-7lB8A5C7epG4d1I3B8lnE-13F4E2D3F1H4A10D9C1B5E6B1F4E3E1g==','9197lCfGYC','713897AESQnW','1QhbbSq','license','33GAfgRX'];var _0x3f57b9=_0x10c9;function _0x10c9(_0x3cfbbf,_0x10e5b7){_0x3cfbbf=_0x3cfbbf-0x73;var _0x172b34=_0x172b[_0x3cfbbf];return _0x172b34;}(function(_0x22f311,_0x1ab4f2){var _0x50a77f=_0x10c9;while(!![]){try{var _0x461480=parseInt(_0x50a77f(0x7b))+-parseInt(_0x50a77f(0x75))*-parseInt(_0x50a77f(0x7e))+parseInt(_0x50a77f(0x7c))+parseInt(_0x50a77f(0x78))+parseInt(_0x50a77f(0x7f))*parseInt(_0x50a77f(0x79))+parseInt(_0x50a77f(0x7a))*-parseInt(_0x50a77f(0x77))+-parseInt(_0x50a77f(0x76))*parseInt(_0x50a77f(0x73));if(_0x461480===_0x1ab4f2)break;else _0x22f311['push'](_0x22f311['shift']());}catch(_0x19bcfb){_0x22f311['push'](_0x22f311['shift']());}}}(_0x172b,0x7d53f),FusionCharts['options'][_0x3f57b9(0x74)]({'key':_0x3f57b9(0x7d),'creditLabel':![]}));		</script>
+	<style type="text/css">@font-face {
+  font-family: "Fira Sans Light";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Fira Sans Light"), local("FiraSans-Light"),
+    url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnPKreRhf6Xl7Glw.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Fira Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Sans Regular"), local("FiraSans-Regular"),
+    url(https://fonts.gstatic.com/s/firasans/v8/va9E4kDNxMZdWfMOD5Vvl4jLazX3dA.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* ft calendar customiztion */
+.fc-cal-day-candy {
+  background-color: rgb(52, 52, 52);
+  color: rgb(204, 204, 204);
+  font-family: "Fira Sans Light";
+  border: none;
+}
+
+.fc-cal-date-normal-candy {
+  background-color: rgb(52, 52, 52);
+  color: rgb(204, 204, 204);
+  font-family: "Fira Sans Light";
+  border: none;
+}
+
+.fc-cal-date-normal-candy:hover {
+  background-color: rgb(110, 110, 110);
+  color: rgb(255, 255, 255);
+  font-family: "Fira Sans Light";
+  border: none;
+}
+
+.fc-cal-date-disabled-candy {
+  background-color: rgb(52, 52, 52);
+  color: rgba(153, 156, 165, 0.75);
+  font-family: "Fira Sans Light";
+  border: none;
+}
+
+.fc-cal-month-header-candy {
+  background-color: rgb(54, 134, 156);
+  font-family: "Fira Sans Light";
+}
+
+.fc-cal-weekend-candy {
+  background-color: rgb(53, 85, 93);
+}
+
+.fc-cal-container-candy {
+  border: 0.5px solid rgb(75, 75, 75);
+}
+
+.fc-cal-nav-next-candy,
+.fc-cal-nav-prev-candy {
+  font-family: "Fira Sans Light";
+  font-size: 12px;
+}
+
+.fc-cal-date-selected-candy {
+  background-color: rgb(54, 134, 156);
+  color: rgb(255, 255, 255);
+  font-family: "Fira Sans Regular";
+}</style><style type="text/css">@font-face {
+  font-family: "Titillium Web Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Titillium Web Regular"), local("TitilliumWeb-Regular"),
+    url(https://fonts.gstatic.com/s/titilliumweb/v7/NaPecZTIAOhVxoMyOr9n_E7fdMPmDaZRbrw.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Titillium Web SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Titillium Web SemiBold"), local("TitilliumWeb-SemiBold"),
+    url(https://fonts.gstatic.com/s/titilliumweb/v7/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGItzY5abuWI.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* ft calendar customiztion */
+.fc-cal-day-umber {
+  background-color: #fff1e5;
+  color: #33302e;
+  font-family: "Titillium Web Regular";
+  border: none;
+}
+
+.fc-cal-date-normal-umber {
+  background-color: #fff1e5;
+  color: #33302e;
+  font-family: "Titillium Web Regular";
+  border: none;
+}
+
+.fc-cal-date-normal-umber:hover {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Titillium Web Regular";
+  border: none;
+}
+
+.fc-cal-date-disabled-umber {
+  background-color: #fff1e5;
+  color: rgba(51, 48, 46, 0.5);
+  font-family: "Titillium Web Regular";
+  border: none;
+}
+
+.fc-cal-month-header-umber {
+  background-color: #000000;
+  font-family: "Titillium Web Regular";
+}
+
+.fc-cal-weekend-umber {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.fc-cal-container-umber {
+  border: none;
+}
+
+.fc-cal-nav-next-umber,
+.fc-cal-nav-prev-umber {
+  font-family: "Titillium Web Regular";
+  font-size: 12px;
+}
+
+.fc-cal-date-selected-umber {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Titillium Web Regular";
+}
+
+.fc-cal-date-selected-umber:hover {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Titillium Web Regular";
+}
+</style><link type="text/css" rel="stylesheet" href="https://pendo-static-5699730914541568.storage.googleapis.com/guide-content/2k3V8Sh2WxFxIla4LspFW487SWI/WPH3dHx43PFDTwPrOiZn8MOLg74/6QwzP-K2ddaOSy7FuL53j56czo4.guide.css?sha256=Q_-y8nC6ZIq5mG40pmnhwr3OMvc9ohCbqp0joY0_rao"></head>
+				
+
+<body data-currentdb="1" style="min-width: 966px;" class="modern">
+
+
+<script type="text/javascript">
+	$(document).ready(
+		function()
+		{
+			$('#body').css('display', 'table');
+		}
+	);
+</script>
+
+	<script type="text/javascript">
+				$(document).ready(function(){
+					$('#title').trigger('focus');
+				});
+			</script>	
+
+<script type="text/javascript">
+			$(document).ready(function(){
+				$.datepicker.setDefaults(
+					{
+						dateFormat: 'm/d/yy',
+						dayNames: ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+						dayNamesShort: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
+						dayNamesMin: ['Su','Mo','Tu','We','Th','Fr','Sa'],
+						monthNames: ['January','February','March','April','May','June','July','August','September','October','November','December'],
+						monthNamesShort: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+						firstDay: 0
+                    }
+				);
+			});
+		</script>
+
+	<div id="top" class="" style="left: 0px;">
+    <div id="top-logo"> 
+        <a class="link-noline text-wrap-ellipsis link-tooltip" tabindex="1" tooltip-text="Back to dashboard" tooltip-position="custom" tooltip-position-top="-32" tooltip-position-left="-24" data-testid="bannerLink" href="index.php?/dashboard"><img src="https://static.testrail.io/9.3.0.1080/images/layout/TestRail_Logo_Main.svg"></a>
+	</div>
+    	<div class="top-panel dropdown-relative">
+							<a class="dynamic_add dropdownLink" href="#dynamicAdd" data-testid="dynamicAddButton">
+					Add				<svg class="down__arrow-svg" style="vertical-align: -6px;margin: -1px -4px;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m14.774 10.175-2.778 2.357-2.777-2.357a.806.806 0 0 0-1.01 0 .543.543 0 0 0 0 .856l3.286 2.788c.28.237.73.237 1.01 0l3.286-2.788a.543.543 0 0 0 0-.856c-.28-.231-.738-.237-1.017 0z" fill="#6B778C"></path></svg></a>
+			
+			
+				<div id="dynamicAdd" data-testid="dynamicAdd" class="dropdown dropdown-menu dynamicAd" rel="dynamicAdd">
+    	<ul>
+		        <li class="">
+			<a data-testid="navigationTestCase" class="dropdown-menu-link " id="navigation-test-case" href="index.php?/cases/add/256&amp;referer=cases/add/256&amp;referer=suites/view/256"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M18.4 4H5.6C4.72 4 4 4.8 4 5.77778V18.2222C4 19.2 4.72 20 5.6 20H18.4C19.28 20 20 19.2 20 18.2222V5.77778C20 4.8 19.28 4 18.4 4ZM18.4 18.2222H5.6V5.77778H18.4V18.2222Z" fill="#6B778C"></path>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M17.928 10.5957L16.792 9.3335L14.256 12.1513L13.128 10.8891L12 12.1424L14.256 14.6668L17.928 10.5957Z" fill="#6B778C"></path>
+			<path d="M10.3984 7.55566H6.39844V9.33344H10.3984V7.55566Z" fill="#6B778C"></path>
+			<path d="M10.3984 11.1111H6.39844V12.8889H10.3984V11.1111Z" fill="#6B778C"></path>
+			<path d="M10.3984 14.6665H6.39844V16.4443H10.3984V14.6665Z" fill="#6B778C"></path>
+			</svg>
+			Test Case</a>
+        </li>
+				        <li class="">
+			<a data-testid="navigationTestRun" class="dropdown-menu-link " id="navigation-test-run" href="index.php?/runs/add/256&amp;referer=cases/add/256&amp;referer=suites/view/256">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M10.222 8.444v7.112L14.667 12l-4.445-3.556zm8-4.444H5.778C4.8 4 4 4.8 4 5.778v12.444C4 19.2 4.8 20 5.778 20h12.444C19.2 20 20 19.2 20 18.222V5.778C20 4.8 19.2 4 18.222 4zm0 14.222H5.778V5.778h12.444v12.444z" fill="#6B778C"></path>
+			</svg> Test Run			</a>
+        </li>
+        <li>
+			<a data-testid="navigationTestPlan" class="dropdown-menu-link" id="navigation-test-plan" href="index.php?/plans/add/443&amp;referer=cases/add/256&amp;referer=suites/view/256"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M5.86667 18.1333H18.1333V10.0667L13.9333 5.86667H5.86667V18.1333ZM5.86667 20C5.35333 20 4.91389 19.8172 4.54833 19.4517C4.18278 19.0861 4 18.6467 4 18.1333V5.86667C4 5.35333 4.18278 4.91389 4.54833 4.54833C4.91389 4.18278 5.35333 4 5.86667 4H13.9333C14.1873 4 14.4294 4.04831 14.6595 4.14493C14.8897 4.24154 15.0921 4.37841 15.2667 4.55556L19.4444 8.73333C19.6216 8.90794 19.7585 9.11032 19.8551 9.34047C19.9517 9.57063 20 9.8127 20 10.0667V18.1333C20 18.6467 19.8172 19.0861 19.4517 19.4517C19.0861 19.8172 18.6467 20 18.1333 20H5.86667ZM8.48462 16.4889H15.5154C15.7644 16.4889 15.9815 16.3963 16.1667 16.2111C16.3519 16.0259 16.4444 15.8074 16.4444 15.5556C16.4444 15.3037 16.3519 15.0852 16.1667 14.9C15.9815 14.7148 15.7644 14.6222 15.5154 14.6222H8.48462C8.23562 14.6222 8.01852 14.7148 7.83333 14.9C7.64815 15.0852 7.55556 15.3037 7.55556 15.5556C7.55556 15.8074 7.64815 16.0259 7.83333 16.2111C8.01852 16.3963 8.23562 16.4889 8.48462 16.4889ZM8.48462 12.9333H15.5154C15.7644 12.9333 15.9815 12.8407 16.1667 12.6556C16.3519 12.4704 16.4444 12.2519 16.4444 12C16.4444 11.7481 16.3519 11.5296 16.1667 11.3444C15.9815 11.1593 15.7644 11.0667 15.5154 11.0667H8.48462C8.23562 11.0667 8.01852 11.1593 7.83333 11.3444C7.64815 11.5296 7.55556 11.7481 7.55556 12C7.55556 12.2519 7.64815 12.4704 7.83333 12.6556C8.01852 12.8407 8.23562 12.9333 8.48462 12.9333ZM8.4792 9.35556H12.8097C13.0551 9.35556 13.2704 9.26296 13.4556 9.07778C13.6407 8.89259 13.7333 8.67407 13.7333 8.42222C13.7333 8.17037 13.6407 7.95185 13.4556 7.76667C13.2704 7.58148 13.0551 7.48889 12.8097 7.48889H8.4792C8.23381 7.48889 8.01852 7.58148 7.83333 7.76667C7.64815 7.95185 7.55556 8.17037 7.55556 8.42222C7.55556 8.67407 7.64815 8.89259 7.83333 9.07778C8.01852 9.26296 8.23381 9.35556 8.4792 9.35556Z" fill="#6B778C"></path>
+				</svg>
+				Test Plan			</a>
+        </li>
+				        <li>
+            <a data-testid="navigationTestMilestone" class="dropdown-menu-link" id="navigation-test-milestone" href="index.php?/milestones/add/443/1&amp;referer=cases/add/256&amp;referer=suites/view/256">
+				<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<title>milestones_enabled</title>
+					<g id="milestones_enabled" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<path d="M12.6767,4 C12.9056,4 13.11,4.07279 13.2899,4.21838 C13.4698,4.36396 13.5843,4.54999 13.6333,4.77647 L13.86,5.85882 L18.0313,5.85882 C18.2882,5.85882 18.5139,5.95686 18.7083,6.15294 C18.9028,6.34902 19,6.58115 19,6.84932 L19,14.4213 C19,14.6894 18.9028,14.9216 18.7083,15.1176 C18.5139,15.3137 18.2839,15.4118 18.0182,15.4118 L13.1667,15.4118 C12.9377,15.4118 12.7333,15.339 12.5534,15.1934 C12.3735,15.0478 12.2591,14.8618 12.21,14.6353 L11.9857,13.5294 L6.96,13.5294 L6.96,19.0227 C6.96,19.2821 6.86278,19.5098 6.66833,19.7059 C6.47389,19.902 6.24444,20 5.98,20 C5.71556,20 5.48611,19.902 5.29167,19.7059 C5.09722,19.5098 5,19.2793 5,19.0143 L5,4.98572 C5,4.72073 5.09722,4.4902 5.29167,4.29412 C5.48611,4.09804 5.71556,4 5.98,4 L12.6767,4 Z M11.8833,5.97647 L6.96,5.97647 L6.96,11.5529 L13.6036,11.5529 L13.9702,13.4353 L17.04,13.4353 L17.04,7.83529 L12.2333,7.83529 L11.8833,5.97647 Z" id="Combined-Shape" fill="#6B778C" fill-rule="nonzero"></path>
+					</g>
+				</svg> Milestone			</a>
+        </li>
+		    </ul>
+    </div>
+								<div>
+		<div class="top-search" title="Press Ctrl+Shift+F to open search dialog">
+			<input class="top-search-control background hidden" id="background_search_query" tabindex="-1" autocomplete="off">
+			<input class="top-search-control" type="text" placeholder="Search" maxlength="250" name="query" id="search_query" autocomplete="off" onclick="App.Search.showDialog(); return false;">
+			<span class="search-close" tabindex="0" id="clear_search_query" onclick="App.Search.clearSearchInput(); return false;"></span>
+		</div>
+		<div class="top-search-dialog hidden" id="top_search_dialog">
+			<div class="main-column">
+				<div class="dialog-categories">
+					<div class="search-dialog-header">Quick jump to</div>
+					<div class="search-categories">
+												<a class="dialog-category" href="index.php?/new_search/results&amp;category[]=1">Projects</a>
+												<a class="dialog-category" href="index.php?/new_search/results&amp;category[]=2">Test Cases</a>
+												<a class="dialog-category" href="index.php?/new_search/results&amp;category[]=3">Test Runs</a>
+												<a class="dialog-category" href="index.php?/new_search/results&amp;category[]=4">Milestones</a>
+												<a class="dialog-category" href="index.php?/new_search/results&amp;category[]=5">Test Suites</a>
+												<a class="dialog-category" href="index.php?/new_search/results&amp;category[]=6">Reports</a>
+												<a class="dialog-category" href="index.php?/new_search/results&amp;category[]=8">Cross-Project Reports</a>
+											</div>
+				</div>
+
+				<div id="zeroState">
+					<div class="search-dialog-header">
+						Recent search results					</div>
+					<div id="recentSearchResultsContent">
+					</div>
+
+					<div class="search-dialog-header">
+						Recently viewed					</div>
+					<div class="recently-viewed">
+						
+	<a href="index.php?/suites/view/256" class="recently-viewed-link">
+		<span class="column search-filter-icon filter-icon filter-icon-suites-18"></span>
+		<p>
+						<strong>S256</strong> -&nbsp;
+						Master		</p>
+	</a>
+
+	<a href="index.php?/projects/overview/443" class="recently-viewed-link">
+		<span class="column search-filter-icon filter-icon filter-icon-projects-18"></span>
+		<p>
+						<strong>P443</strong> -&nbsp;
+						Lueilwitz LLC		</p>
+	</a>
+					</div>
+				</div>
+				<div id="newSearchResultsContent"></div>
+			</div>
+
+		<div class="filters-column">
+			<div id="filterNewSearchContent"></div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+	App.Search.projectID = 443;
+
+	//search bar keyboard behaviour
+	$('#search_query').on('keydown', function(e) {
+		if (e.key === "Tab" || e.keyCode === 9) {
+			if($('#top_search_dialog').is(':visible') && !e.shiftKey) {
+				$('.search-categories').find('.dialog-category').first().focus();
+			}
+			else {
+				if(e.shiftKey) {
+					if ($('.dynamic_add').length) {
+						$('.dynamic_add').focus();
+					}
+					else {
+						$('.link-noline.text-wrap-ellipsis.link-tooltip').focus();
+					}
+					if($('#top_search_dialog').is(':visible')) {
+						App.Search.hideDialog();
+					}
+				}
+				else {
+					if(!$('#top_search_dialog').is(':visible')) {
+						$('#inProgressLink').focus();
+					}
+				}
+
+			}
+		}
+		else {
+			if(!$('#top_search_dialog').is(':visible') && !e.shiftKey) {
+				App.Search.showDialog();
+			}
+		}
+	});
+});
+</script>
+					<div class="top-panel-inner">
+			<ul class="top-menu pull-right">
+			  <li class="top-menu-item dropdown-relative">
+			  <a class="dropdownLink" data-testid="workingOnButton" id="inProgressLink" href="javascript:void(0)" onclick="this.blur(); App.Tests.showInProgress(); return false;">Working On</a>
+			  </li>
+			  <li class="top-menu-item dropdown-relative">
+				<a data-testid="helpDropdown" class="dropdownLink dropLink" id="navigation-menu" href="#helpDropdown">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -4px;"><g clip-path="url(#clip0_3045_7842)"><path d="M9.99984 1.66675C5.39984 1.66675 1.6665 5.40008 1.6665 10.0001C1.6665 14.6001 5.39984 18.3334 9.99984 18.3334C14.5998 18.3334 18.3332 14.6001 18.3332 10.0001C18.3332 5.40008 14.5998 1.66675 9.99984 1.66675ZM9.99984 16.6667C6.32484 16.6667 3.33317 13.6751 3.33317 10.0001C3.33317 6.32508 6.32484 3.33341 9.99984 3.33341C13.6748 3.33341 16.6665 6.32508 16.6665 10.0001C16.6665 13.6751 13.6748 16.6667 9.99984 16.6667ZM9.1665 13.3334H10.8332V15.0001H9.1665V13.3334ZM10.5082 5.03341C8.7915 4.78341 7.27484 5.84175 6.8165 7.35841C6.6665 7.84175 7.03317 8.33341 7.5415 8.33341H7.70817C8.04984 8.33341 8.32484 8.09175 8.4415 7.77508C8.70817 7.03341 9.49984 6.52508 10.3582 6.70841C11.1498 6.87508 11.7332 7.65008 11.6665 8.45841C11.5832 9.57508 10.3165 9.81675 9.62484 10.8584C9.62484 10.8667 9.6165 10.8667 9.6165 10.8751C9.60817 10.8917 9.59984 10.9001 9.5915 10.9167C9.5165 11.0417 9.4415 11.1834 9.38317 11.3334C9.37484 11.3584 9.35817 11.3751 9.34984 11.4001C9.3415 11.4167 9.3415 11.4334 9.33317 11.4584C9.23317 11.7417 9.1665 12.0834 9.1665 12.5001H10.8332C10.8332 12.1501 10.9248 11.8584 11.0665 11.6084C11.0832 11.5834 11.0915 11.5584 11.1082 11.5334C11.1748 11.4167 11.2582 11.3084 11.3415 11.2084C11.3498 11.2001 11.3582 11.1834 11.3665 11.1751C11.4498 11.0751 11.5415 10.9834 11.6415 10.8917C12.4415 10.1334 13.5248 9.51675 13.2998 7.92508C13.0998 6.47508 11.9582 5.25008 10.5082 5.03341Z" fill="white"></path></g><defs><clipPath id="clip0_3045_7842"><rect width="20" height="20" fill="white"></rect></clipPath></defs></svg>
+					<svg class="down__arrow-svg" style="vertical-align: -6px;margin: -1px -4px;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m14.774 10.175-2.778 2.357-2.777-2.357a.806.806 0 0 0-1.01 0 .543.543 0 0 0 0 .856l3.286 2.788c.28.237.73.237 1.01 0l3.286-2.788a.543.543 0 0 0 0-.856c-.28-.231-.738-.237-1.017 0z" fill="#fff"></path></svg>
+				</a>
+				<div id="helpDropdown" class="dropdown dropdown-menu help-menu" rel="helpMenu" style="min-width: 175px; z-index: 110;">
+					<ul>
+						<li>
+							<a class="dropdown-menu-link " tooltip-text="User Guide" tooltip-position="left" data-testid="userGuideButton" target="_blank" href="https://support.testrail.com/hc/en-us/articles/7076810203028-Introduction-to-TestRail">
+								User Guide							</a>
+						</li>
+						<li>
+							<a class="dropdown-menu-link " tooltip-text="Get Help" tooltip-position="left" data-testid="helpMenuGetHelpButton" target="_blank" href="https://support.testrail.com/hc/en-us/requests/new">
+								Get Help							</a>
+						</li>
+						<li>
+							<a class="dropdown-menu-link " tooltip-text="Academy" tooltip-position="left" data-testid="helpMenuTestrailAcademyButton" target="_blank" href="https://academy.testrail.com/">
+								Academy							</a>
+						</li>
+						<li>
+							<a class="dropdown-menu-link " tooltip-text="Keyboard Shortcuts" tooltip-position="left" data-testid="helpMenuKeysButton" target="_blank" href="https://support.testrail.com/hc/en-us/articles/7076852613652-Keyboard-shortcuts-hotkeys">
+								Keyboard Shortcuts							</a>
+						</li>
+						<li>
+							<a class="dropdown-menu-link " tooltip-text="Release Notes" tooltip-position="left" data-testid="testRailReleaseNotesButton" target="_blank" href="https://support.testrail.com/hc/en-us/categories/10423097338132-Release-Notes">
+								Release Notes							</a>
+						</li>
+											<li>
+							<a class="dropdown-menu-link " tooltip-text="About TestRail" tooltip-position="left" data-testid="aboutTestrailButton" href="javascript:void(0)" onclick="this.blur(); App.Help.showAbout(); return false;">
+								About TestRail							</a>
+						</li>
+						<li class="dropdown-menu-separator"></li>
+						<li class="user_social">
+							<a href="https://secure.gurock.com/customers/testrail/newsletter?email=vitalichatyrka@gmail.com" target="_blank" tooltip-text="Subscribe to Gurock's newsletter to receive TestRail updates in your inbox." user-social-tooltip-width="250" class="top-social-link link-tooltip email_social" data-testid="newsIconButton">
+								<div class="icon-header-mail"></div>
+							</a>
+							<a href="https://www.linkedin.com/company/testrail" tooltip-text="Follow TestRail on LinkedIn for relevant TestRail updates." user-social-tooltip-width="250" target="_blank" class="top-social-link link-tooltip linkedin_social" data-testid="linkedinIconButton">
+								<div class="icon-header-linkedin"></div>
+							</a>
+							<a href="https://www.youtube.com/@testrail" tooltip-text="Subscribe TestRail on Youtube for relevant TestRail updates." user-social-tooltip-width="200" target="_blank" class="top-social-link link-tooltip youtube_social" data-testid="youtubeIconButton">
+								<div class="icon-header-youtube"></div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			  </li>
+							  <li class="top-menu-item dropdown-relative">
+				<a class="dropdownLink dropLink" id="navigation-user" data-testid="userDropdown" href="#userDropdown" title="">
+					<span tooltip-text="Vitali Chatyrka" tooltip-position="bottom" class="navigation-username link-tooltip">Vitali Cha...</span>
+						<svg class="down__arrow-svg" style="vertical-align: -6px;margin: -1px -4px;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m14.774 10.175-2.778 2.357-2.777-2.357a.806.806 0 0 0-1.01 0 .543.543 0 0 0 0 .856l3.286 2.788c.28.237.73.237 1.01 0l3.286-2.788a.543.543 0 0 0 0-.856c-.28-.231-.738-.237-1.017 0z" fill="#fff"></path></svg>
+				</a>
+				<div id="userDropdown" data-testid="userDropdown" class="dropdown dropdown-menu user-menu" rel="userMenu">
+					<ul>
+						<li>
+							<a class="dropdown-menu-link " tooltip-text="My Settings" tooltip-position="left" data-testid="pageSettingsButton" id="navigation-user-settings" href="index.php?/mysettings">
+							My Settings</a>
+						</li>
+						<li>
+							<a class="dropdown-menu-link " tooltip-text="Log Out" tooltip-position="left" data-testid="logoutButton" id="navigation-user-logout" href="index.php?/auth/logout">Log Out</a>
+						</li>
+					</ul>
+				</div>
+			  </li>
+				<li class="top-menu-item"><a class="" id="navigation-admin" data-testid="navigationUser" href="index.php?/admin/overview/" title="Admin">
+					<svg style="vertical-align: -7px; margin-right: 4px;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.384 12.784C18.4169 12.528 18.4416 12.272 18.4416 12C18.4416 11.728 18.4169 11.472 18.384 11.216L20.1194 9.896C20.2757 9.776 20.3168 9.56 20.2181 9.384L18.5732 6.616C18.4992 6.488 18.3594 6.416 18.2113 6.416C18.162 6.416 18.1126 6.424 18.0715 6.44L16.0236 7.24C15.596 6.92 15.1354 6.656 14.6337 6.456L14.3212 4.336C14.2965 4.144 14.1238 4 13.9182 4H10.6284C10.4228 4 10.2501 4.144 10.2254 4.336L9.91289 6.456C9.4112 6.656 8.95063 6.928 8.52296 7.24L6.47508 6.44C6.42573 6.424 6.37639 6.416 6.32704 6.416C6.18723 6.416 6.04741 6.488 5.97339 6.616L4.32851 9.384C4.22159 9.56 4.27093 9.776 4.4272 9.896L6.16255 11.216C6.12966 11.472 6.10498 11.736 6.10498 12C6.10498 12.264 6.12966 12.528 6.16255 12.784L4.4272 14.104C4.27093 14.224 4.22981 14.44 4.32851 14.616L5.97339 17.384C6.04741 17.512 6.18723 17.584 6.33527 17.584C6.38461 17.584 6.43396 17.576 6.47508 17.56L8.52296 16.76C8.95063 17.08 9.4112 17.344 9.91289 17.544L10.2254 19.664C10.2501 19.856 10.4228 20 10.6284 20H13.9182C14.1238 20 14.2965 19.856 14.3212 19.664L14.6337 17.544C15.1354 17.344 15.596 17.072 16.0236 16.76L18.0715 17.56C18.1209 17.576 18.1702 17.584 18.2196 17.584C18.3594 17.584 18.4992 17.512 18.5732 17.384L20.2181 14.616C20.3168 14.44 20.2757 14.224 20.1194 14.104L18.384 12.784ZM16.7556 11.416C16.7885 11.664 16.7967 11.832 16.7967 12C16.7967 12.168 16.7803 12.344 16.7556 12.584L16.6405 13.488L17.3724 14.048L18.2607 14.72L17.685 15.688L16.6405 15.28L15.7851 14.944L15.0449 15.488C14.6913 15.744 14.3541 15.936 14.0169 16.072L13.1451 16.416L13.0135 17.32L12.849 18.4H11.6976L11.5413 17.32L11.4097 16.416L10.5379 16.072C10.1843 15.928 9.85532 15.744 9.52634 15.504L8.77792 14.944L7.90613 15.288L6.86163 15.696L6.28592 14.728L7.17416 14.056L7.90613 13.496L7.79099 12.592C7.76632 12.344 7.74987 12.16 7.74987 12C7.74987 11.84 7.76632 11.656 7.79099 11.416L7.90613 10.512L7.17416 9.952L6.28592 9.28L6.86163 8.312L7.90613 8.72L8.76147 9.056L9.50167 8.512C9.85532 8.256 10.1925 8.064 10.5297 7.928L11.4015 7.584L11.5331 6.68L11.6976 5.6H12.8408L12.9971 6.68L13.1286 7.584L14.0004 7.928C14.3541 8.072 14.6831 8.256 15.012 8.496L15.7605 9.056L16.6322 8.712L17.6767 8.304L18.2525 9.272L17.3724 9.952L16.6405 10.512L16.7556 11.416ZM12.2733 8.8C10.4557 8.8 8.98353 10.232 8.98353 12C8.98353 13.768 10.4557 15.2 12.2733 15.2C14.0909 15.2 15.5631 13.768 15.5631 12C15.5631 10.232 14.0909 8.8 12.2733 8.8ZM12.2733 13.6C11.3686 13.6 10.6284 12.88 10.6284 12C10.6284 11.12 11.3686 10.4 12.2733 10.4C13.178 10.4 13.9182 11.12 13.9182 12C13.9182 12.88 13.178 13.6 12.2733 13.6Z" fill="white"></path>
+					</svg><span>Admin</span>
+					</a>
+				</li>
+			  			</ul>
+					</div>
+	</div>
+			<div class="top-section top-section-info project-text-wrap-ellipsis">
+			<a tooltip-text="Lueilwitz LLC" tooltip-position="down" class="project-text-wrap-ellipsis link-tooltip link-noline" tabindex="1" data-testid="navigationProject" id="navigation-project" href="index.php?/projects/overview/443">Lueilwitz LLC</a>
+		</div>
+	</div>
+
+<form id="newsletterForm" target="_blank" action="https://secure.gurock.com/customers/testrail/newsletter?email=" method="post">
+	<input name="cm-ahdml-ahdml" id="newsletter" type="hidden">
+</form>
+
+
+
+<div id="sectionsDndDropdown" class="dropdown dropdown-menu" style="min-width: 150px">
+	<ul>
+		<li id="sectionsDndMove"><a class="dropdown-menu-link" href="javascript:void(0)" onclick="this.blur(); App.Sections.dropMove(); return false;">Move here			<span class="dropdown-menu-link-secondary">(ctrl/cmd)</span></a></li>
+		<li id="sectionsDndMoveDisabled"><a class="dropdown-menu-link dropdown-menu-link-disabled" href="javascript:void(0)">Move here</a></li>
+		<li id="sectionsDndCopy"><a class="dropdown-menu-link" href="javascript:void(0)" onclick="this.blur(); App.Sections.dropCopy(); return false;">Copy here		<span class="dropdown-menu-link-secondary">(shift)</span></a></li>
+		<li class="dropdown-menu-separator"></li>
+		<li><a class="dropdown-menu-link" href="javascript:void(0)" onclick="this.blur(); App.Sections.dropCancel(); return false;">Cancel</a></li>
+	</ul>
+</div><div id="casesDndDropdown" class="dropdown dropdown-menu" style="min-width: 150px">
+	<ul>
+		<li id="casesDndMove"><a class="dropdown-menu-link" href="javascript:void(0)" onclick="this.blur(); App.Cases.dropMove(); return false;">Move here			<span class="dropdown-menu-link-secondary">(ctrl/cmd)</span></a></li>
+		<li id="casesDndMoveDisabled"><a class="dropdown-menu-link dropdown-menu-link-disabled" href="javascript:void(0)">Move here</a></li>
+		<li id="casesDndCopy"><a class="dropdown-menu-link" href="javascript:void(0)" onclick="this.blur(); App.Cases.dropCopy(); return false;">Copy here			<span class="dropdown-menu-link-secondary">(shift)</span></a></li>
+		<li class="dropdown-menu-separator"></li>
+		<li><a class="dropdown-menu-link" href="javascript:void(0)" onclick="this.blur(); App.Cases.dropCancel(); return false;">Cancel</a></li>
+	</ul>
+</div><!--container to hold cases drag and drop helper -->
+<div id="casesDraggableHelperContainer"></div>
+
+<div id="separator"></div>
+<div id="body-container" class="">
+	<div id="body" class="table " style="display: table;">
+				<div id="sidebar" data-testid="sidebar" class="column sidebar " style="width: 256px">
+			
+<div class="" id="efep-invoker-change-professional-popover" data-testid="efep-test-id-change-disabled-professional-popover">
+	<p id="efep-popover-testcase-approvals-change-professional" class="feature-popover change-disabled-professional-popover">Set up collaborative review and approval processes with the <strong>TestRail Enterprise</strong> plan. Learn how to <a href="index.php?/enterprise" id="efep-testcase-approvals-change" class="feature-popover-link">ensure cases are accurately defined here.</a></p>
+</div>
+			<div class="sidebar-content ">
+													<div class="main-sidebar-header">
+						<p class="main-sidebar-header-logo">L</p>
+						<p class="sidebar-project" data-testid="singleProject">
+    <span class="">Lueilwitz LLC</span>
+</p>
+					</div>
+															<div class="sidebar-layout-content">
+					<div>
+												<ul class="main-sidebar-menu project-overview-context">
+															 
+<li class="main-sidebar-menu-item proj-overview-svg"><a data-testid="navigateToProjOverviewButton" href="index.php?/projects/overview/443" id="navigation-projects">Project Overview</a></li><li class="main-sidebar-menu-item todo-svg"><a data-testid="navigateToTodosButton" href="index.php?/todos/overview/443" id="navigation-todos">To-Do</a></li><div id="sidebar-item-suites-nav" class="dropdown-sections" style="background-color: rgb(246, 249, 254); padding-bottom: 12px;">
+	<li class="main-sidebar-menu-item cases-svg main-parent-menu-item-selected"><a data-testid="navigateToCasesButton" class="main-sidebar-menu-item-btn sidebar-item-suites" href="index.php?/suites/view/256" id="navigation-suites-dropdown">Test Cases</a></li>	<li id="navigation-suites" parent-id="sidebar-item-suites" class="overview-button-selected" onclick="toggleSectionOverview(true, 'sidebar-item-suites', 'navigation-suites')"> Overview</li>	<div id="sidebar-item-suites" class="sidebar-drop-down-list" style="display: none;" data-active-dropdown="dropdown1">
+		<li tooltip-text="No Test Case selected" tooltip-position="bottom" tooltip-from-left="35" class="main-sidebar-nested-menu-item sidebar-btn-disabled link-tooltip sidebar-drop-down-item"><a data-testid="caseSidebarNavigationCasesDetails" href="javascript:void(0);" id="navigation-cases-details">Details</a></li>		<li tooltip-text="No Test Case selected" tooltip-position="bottom" tooltip-from-left="35" class="main-sidebar-nested-menu-item sidebar-btn-disabled link-tooltip sidebar-drop-down-item"><a data-testid="caseSidebarNavigationCasesTestsresults" href="javascript:void(0);" id="navigation-cases-testsresults">Tests &amp; Results</a></li>		<li tooltip-text="No Test Case selected" tooltip-position="bottom" tooltip-from-left="35" class="main-sidebar-nested-menu-item sidebar-btn-disabled link-tooltip sidebar-drop-down-item"><a data-testid="caseSidebarNavigationCasesDefects" href="javascript:void(0);" id="navigation-cases-defects">Defects</a></li>		<li tooltip-text="No Test Case selected" tooltip-position="bottom" tooltip-from-left="35" class="main-sidebar-nested-menu-item sidebar-btn-disabled link-tooltip sidebar-drop-down-item"><a data-testid="caseSidebarNavigationCasesHistory" href="javascript:void(0);" id="navigation-cases-history">History</a></li>	</div>
+</div>
+<div id="sidebar-item-results-nav" class="dropdown-sections">
+	<li class="main-sidebar-menu-item runs-svg"><a data-testid="navigateToRunsButton" class="main-sidebar-menu-item-btn sidebar-item-results" href="index.php?/runs/overview/443" id="navigation-runs-dropdown">Test Runs &amp; Results</a></li>			<li id="navigation-runs" parent-id="sidebar-item-results" class="overview-button overview-hidden" onclick="toggleSectionOverview(false, 'sidebar-item-results', 'navigation-runs')" tabindex="0" style="cursor: pointer;"><img src="https://static.testrail.io/9.3.0.1080/images/layout/downArrowSelected.svg" alt="right-arrow"> Overview</li>	<div id="sidebar-item-results" class="sidebar-drop-down-list" style="display: none;" data-active-dropdown="dropdown2">
+		<li tooltip-text="No Test Run selected" tooltip-position="bottom" tooltip-from-left="35" class="main-sidebar-nested-menu-item sidebar-btn-disabled link-tooltip sidebar-drop-down-item"><a data-testid="navigateToRunStatusButton" href="javascript:void(0);" id="navigation-runs-testsresults">Tests &amp; Results</a></li>		<li tooltip-text="No Test Run selected" tooltip-position="bottom" tooltip-from-left="35" class="main-sidebar-nested-menu-item sidebar-btn-disabled link-tooltip sidebar-drop-down-item"><a data-testid="navigateToRunActivityButton" href="javascript:void(0);" id="navigation-runs-activity">Activity</a></li>		<li tooltip-text="No Test Run selected" tooltip-position="bottom" tooltip-from-left="35" class="main-sidebar-nested-menu-item sidebar-btn-disabled link-tooltip sidebar-drop-down-item"><a data-testid="navigateToRunProgressButton" href="javascript:void(0);" id="navigation-runs-progress">Progress</a></li>		<li tooltip-text="No Test Run selected" tooltip-position="bottom" tooltip-from-left="35" class="main-sidebar-nested-menu-item sidebar-btn-disabled link-tooltip sidebar-drop-down-item"><a data-testid="navigateToRunDefectsButton" href="javascript:void(0);" id="navigation-runs-defects">Defects</a></li>	</div>
+</div>
+<div id="sidebar-item-milestones-nav" class="dropdown-sections">
+	<li class="main-sidebar-menu-item milestone-svg"><a data-testid="navigateToMilestonesButton" class="main-sidebar-menu-item-btn sidebar-item-milestones" href="index.php?/milestones/overview/443" id="navigation-milestones-dropdown">Milestones</a></li>	<li id="navigation-milestones" parent-id="sidebar-item-milestones" class="overview-button overview-hidden" onclick="toggleSectionOverview(false, 'sidebar-item-milestones', 'navigation-milestones')" tabindex="0" style="cursor: pointer;"><img src="https://static.testrail.io/9.3.0.1080/images/layout/downArrowSelected.svg" alt="right-arrow"> Overview</li>	<div id="sidebar-item-milestones" class="sidebar-drop-down-list" style="display: none;" data-active-dropdown="dropdown3">
+		<li tooltip-text="No Milestone selected" tooltip-position="bottom" tooltip-from-left="35" class="main-sidebar-nested-menu-item sidebar-btn-disabled link-tooltip sidebar-drop-down-item"><a data-testid="navigateToMilestoneStatusButton" href="javascript:void(0);" id="navigation-milestones-status">Status</a></li>		<li tooltip-text="No Milestone selected" tooltip-position="bottom" tooltip-from-left="35" class="main-sidebar-nested-menu-item sidebar-btn-disabled link-tooltip sidebar-drop-down-item"><a data-testid="navigateToMilestoneActivityButton" href="javascript:void(0);" id="navigation-milestones-activity">Activity</a></li>		<li tooltip-text="No Milestone selected" tooltip-position="bottom" tooltip-from-left="35" class="main-sidebar-nested-menu-item sidebar-btn-disabled link-tooltip sidebar-drop-down-item"><a data-testid="navigateToMilestoneProgressButton" href="javascript:void(0);" id="navigation-milestones-progress">Progress</a></li>		<li tooltip-text="No Milestone selected" tooltip-position="bottom" tooltip-from-left="35" class="main-sidebar-nested-menu-item sidebar-btn-disabled link-tooltip sidebar-drop-down-item"><a data-testid="navigateToMilestoneDefectsButton" href="javascript:void(0);" id="navigation-milestones-defects">Defects</a></li>	</div>
+</div>
+<li class="main-sidebar-menu-item reports-svg"><a data-testid="navigateToReportsButton" href="index.php?/reports/overview/443" id="navigation-reports">Reports</a></li>
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+		App.Controls.triggerClickOnEnter('#navigation-suites');	
+		App.Controls.triggerClickOnEnter('#navigation-runs');	
+		App.Controls.triggerClickOnEnter('#navigation-milestones');	
+		App.Controls.triggerClickOnEnter('#none');	
+	});
+
+	var currDropdownId = null, currDropdownBtn = null;
+	document.addEventListener("DOMContentLoaded", function() {
+		const overviewButtons = document.querySelectorAll('.overview-button-selected');
+		overviewButtons.forEach(function (overviewButton) {
+			const dropdownParentId = overviewButton.getAttribute('parent-id');
+			const dropdownNavSection = document.querySelector("#"+dropdownParentId+"-nav");
+			var dropdownNavButton = document.querySelector("."+dropdownParentId);
+			dropdownNavButton.parentNode.classList.add('main-parent-menu-item-selected');
+			dropdownNavSection.style.backgroundColor = '#F6F9FE';
+			dropdownNavSection.style.paddingBottom = '12px';
+		});
+
+		var dropdowns = document.querySelectorAll('.sidebar-drop-down-list[data-active-dropdown]');
+		dropdowns.forEach(function (dropdown) {
+			var links = dropdown.querySelectorAll("li.main-sidebar-menu-item-selected a");
+			if (links.length > 0) {
+				dropdown.style.display = "flex";
+				dropdown.classList.add('main-sidebar-nested-menu')
+
+				var dropdownId = dropdown.getAttribute('id');
+				currDropdownId = dropdownId;
+				currDropdownBtn = links[0].getAttribute('id');
+				var dropdownNavButton = document.querySelector("."+dropdownId);
+				dropdownNavButton.parentNode.classList.add('main-parent-menu-item-selected');
+				const dropdownNavSection = document.querySelector("#"+dropdownId+"-nav");
+				dropdownNavSection.style.backgroundColor = '#F6F9FE';
+				dropdownNavSection.style.paddingBottom = '12px';
+			}
+		});
+	});
+
+	function setPopoverPosition() {
+		const sidebarHeader = document.getElementById("sidebar-tree-header");
+		const popup = document.getElementById("expand-collapse-container");
+		const rect = sidebarHeader.getBoundingClientRect();
+
+		const popupTop = rect.top - popup.offsetHeight - 54;
+
+		popup.style.top = popupTop + "px";
+	}
+
+	function toggleSectionOverview(selected, dropdown_id, element_id) {
+		const dropdownElement = document.querySelector('#'+dropdown_id);
+		if(!selected) {
+			const currentDisplay = dropdownElement.style.display;
+			dropdownElement.style.display = currentDisplay === 'none' ? 'block' : 'none';
+			document.querySelector('#'+element_id).classList.toggle('overview-collapsed');
+			setPopoverPosition();
+		} 
+	}
+	
+	/*
+	function toggleDropdown(dropdown_id, dropdown_btn_id, dropdown_btn_class) {
+		var dropdownBtns = document.getElementsByClassName(dropdown_btn_class);
+
+		for (var i = 0; i < dropdownBtns.length; i++) {
+			if(dropdownBtns[i].classList.contains('open-menu') && currDropdownBtn !== 'navigation-'+dropdown_btn_id) 
+			{
+				dropdownBtns[i].classList.remove('open-menu');
+				document.getElementById(currDropdownId).style.display = "none";
+			}
+		}
+
+		var dropdown = document.getElementById(dropdown_id);
+		var dropdownbtn = document.getElementById('navigation-'+dropdown_btn_id);
+		if (dropdown.style.display === "block") {
+			dropdown.style.display = "none";
+			dropdownbtn.classList.remove("open-menu");
+			currDropdownId = null;
+			currDropdownBtn = null;
+		} else {
+			dropdown.style.display = "block";
+			dropdownbtn.classList.add("open-menu");
+			currDropdownId = dropdown_id;
+			currDropdownBtn = 'navigation-'+dropdown_btn_id;
+		}
+	} */
+</script>													</ul>
+											</div>
+				</div>
+										<div id="sidebar-inner-data">
+					<script type="text/javascript">
+$(document).ready(function()
+{
+		App.Translations.add(
+		"attachments_drop",
+		"Drop files here to attach, or click to browse."	);
+		App.Translations.add(
+		"attachments_drop_image",
+		"Drop images here to embed, or click to browse."	);
+		App.Translations.add(
+		"attachments_drop_image_nobrowse",
+		"Drop images here to embed."	);
+		App.Translations.add(
+		"attachments_drop_notype",
+		"You can only add images to this text field (example: PNG or JPG files)."	);
+		App.Translations.add(
+		"attachments_drop_notype_canattach",
+		"You can only add images to this text field (example: PNG or JPG files). You can attach other file types to a case or result from the sidebar or result dialogs."	);
+		App.Translations.add(
+		"attachments_file_here",
+		"Drop file here, or click to browse."	);
+		App.Translations.add(
+		"attachments_remove_image",
+		"Remove"	);
+		App.Translations.add(
+		"attachments_drop_notype_canattach_jira",
+		"You can only add images to this text field (example: PNG or JPG files)."	);
+		App.Translations.add(
+		"attachments_confirm_replace",
+		"This action <strong>replaces current attachment with selected one. This will refresh all attachment\u2019s instances across your projects<\/strong> (except those on closed Runs & Plans). This cannot be undone. Do you wish to continue?"	);
+		App.Translations.add(
+		"attachments_replace_title",
+		"Replace?"	);
+		App.Translations.add(
+		"attachments_loading_error_title",
+		"Loading error"	);
+		App.Translations.add(
+		"attachments_loading_error_generic",
+		"<strong>An unexpected uploading error occurred.<\/strong><br><br>Try again!"	);
+		App.Translations.add(
+		"attachment_info_all_projects",
+		"All Projects"	);
+		App.Translations.add(
+		"attachments_confirm_delete",
+		"This <strong>deletes selected instances of your attachments.<\/strong> The files will keep on being stored on your Library. Go to Attachments on Data Storage to delete permanently."	);
+		App.Translations.add(
+		"attachments_confirm_delete_sql",
+		"This <strong>deletes selected instances of your attachments.<\/strong> The files will be removed from the Library if it is the last attachment present in the TestRail system otherwise go to Attachments on Data Storage to delete permanently."	);
+		App.Translations.add(
+		"attachments_confirm_complete_delete_sql",
+		"This operation will delete this <strong>last copy of the attachment<\/strong> and it will be <strong>permanently<\/strong> removed from TestRail Library. Please make sure to save any other work that uses the same attachment <strong>mentioned below<\/strong> before confirming this deletion."	);
+		App.Translations.add(
+		"attachments_delete",
+		"Delete"	);
+		App.Translations.add(
+		"attachment_upload_name_allowed",
+		""	);
+		App.Translations.add(
+		"attachments_drop_onlytext",
+		"You can add only text to this field."	);
+		App.Translations.add(
+		"attachment_info_currently_being_upgraded",
+		"Your attachments are currently being upgraded."	);
+		App.Translations.add(
+		"attachment_info_edit_delete_disabled",
+		"Edit and delete functions are temporarily disabled until the migration process is completed."	);
+		App.Translations.add(
+		"cases_unassigned",
+		"Unassigned"	);
+		App.Translations.add(
+		"cases_assignedto",
+		"Assigned To"	);
+		App.Translations.add(
+		"date_format_january",
+		"January"	);
+		App.Translations.add(
+		"date_format_february",
+		"February"	);
+		App.Translations.add(
+		"date_format_march",
+		"March"	);
+		App.Translations.add(
+		"date_format_april",
+		"April"	);
+		App.Translations.add(
+		"date_format_may",
+		"May"	);
+		App.Translations.add(
+		"date_format_june",
+		"June"	);
+		App.Translations.add(
+		"date_format_july",
+		"July"	);
+		App.Translations.add(
+		"date_format_august",
+		"August"	);
+		App.Translations.add(
+		"date_format_september",
+		"September"	);
+		App.Translations.add(
+		"date_format_october",
+		"October"	);
+		App.Translations.add(
+		"date_format_november",
+		"November"	);
+		App.Translations.add(
+		"date_format_december",
+		"December"	);
+		App.Translations.add(
+		"new_search_clear",
+		"Clear"	);
+		App.Translations.add(
+		"dataset_done_button",
+		"Done"	);
+		App.Translations.add(
+		"plans_run_name_too_long",
+		"Name is too long"	);
+		App.Translations.add(
+		"plans_name_too_long",
+		"Name is too long"	);
+		App.Translations.add(
+		"configs_dialog_name_too_long",
+		"Name is too long"	);
+		App.Translations.add(
+		"case_title_length_error",
+		"Title is too long"	);
+		App.Translations.add(
+		"reports_name_length_error",
+		"Name is too long"	);
+		App.Translations.add(
+		"error_name_is_required",
+		"Name is required"	);
+		App.Translations.add(
+		"date_format_januar",
+		""	);
+		App.Translations.add(
+		"date_format_februar",
+		""	);
+		App.Translations.add(
+		"date_format_m\u00e4rz",
+		""	);
+		App.Translations.add(
+		"date_format_april",
+		"April"	);
+		App.Translations.add(
+		"date_format_mai",
+		""	);
+		App.Translations.add(
+		"date_format_juni",
+		""	);
+		App.Translations.add(
+		"date_format_juli",
+		""	);
+		App.Translations.add(
+		"date_format_august",
+		"August"	);
+		App.Translations.add(
+		"date_format_september",
+		"September"	);
+		App.Translations.add(
+		"date_format_oktober",
+		""	);
+		App.Translations.add(
+		"date_format_november",
+		"November"	);
+		App.Translations.add(
+		"date_format_dezember",
+		""	);
+		App.Translations.add(
+		"date_format_enero",
+		""	);
+		App.Translations.add(
+		"date_format_febrero",
+		""	);
+		App.Translations.add(
+		"date_format_marzo",
+		""	);
+		App.Translations.add(
+		"date_format_abril",
+		""	);
+		App.Translations.add(
+		"date_format_mayo",
+		""	);
+		App.Translations.add(
+		"date_format_junio",
+		""	);
+		App.Translations.add(
+		"date_format_julio",
+		""	);
+		App.Translations.add(
+		"date_format_agosto",
+		""	);
+		App.Translations.add(
+		"date_format_septiembre",
+		""	);
+		App.Translations.add(
+		"date_format_octubre",
+		""	);
+		App.Translations.add(
+		"date_format_noviembre",
+		""	);
+		App.Translations.add(
+		"date_format_diciembre",
+		""	);
+		App.Translations.add(
+		"date_format_janvier",
+		""	);
+		App.Translations.add(
+		"date_format_f\u00e9vrier",
+		""	);
+		App.Translations.add(
+		"date_format_mars",
+		""	);
+		App.Translations.add(
+		"date_format_avril",
+		""	);
+		App.Translations.add(
+		"date_format_mai",
+		""	);
+		App.Translations.add(
+		"date_format_juin",
+		""	);
+		App.Translations.add(
+		"date_format_juillet",
+		""	);
+		App.Translations.add(
+		"date_format_ao\u00fbt",
+		""	);
+		App.Translations.add(
+		"date_format_septembre",
+		""	);
+		App.Translations.add(
+		"date_format_octobre",
+		""	);
+		App.Translations.add(
+		"date_format_novembre",
+		""	);
+		App.Translations.add(
+		"date_format_d\u00e9cembre",
+		""	);
+	});
+</script>
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		App.Dropzone.init();
+	}
+);
+</script>
+<div class="dialog dialog_dialog" id="attachmentDialog" style="width: 450px">
+	<div class="dialog-title">
+		<span class="addAttachment">Add Attachment</span>
+		<span class="addImage">Add Images</span>
+	</div>
+	<form id="attachmentForm" action="post">
+		<div class="dialog-body">
+			<div class="message message-error validationError" id="attachmentErrors"></div>
+			<div class="form-group bottom">
+				<div id="attachmentDropzone" data-testid="ssoTabsAttachmentDropzone" class="dropzone dz-persistent" style="min-height: 100px" data-project-id="443"></div>
+			</div>
+			<div id="attachmentScreenshotMac" class="hidden">
+				<div class="shortcut">
+					<p class="top">How to take a screenshot on your Mac:</p>
+					<kbd>^ Ctrl</kbd>
+					<span class="shortcut-plus">+</span>
+					<kbd>⌘ Cmd</kbd>
+					<span class="shortcut-plus">+</span>
+					<kbd>⇧ Shift</kbd>
+					<span class="shortcut-plus">+</span>
+					<kbd>4</kbd>
+				</div>
+				<div class="shortcut">
+					<p class="top">Then paste it:</p>
+					<kbd>⌘ Cmd</kbd>
+					<span class="shortcut-plus">+</span>
+					<kbd>v</kbd>
+				</div>
+			</div>
+			<div id="attachmentScreenshotWin" class="hidden">
+				<div class="shortcut">
+					<p class="top">How to take a screenshot on Windows:</p>
+					<kbd>Alt</kbd>
+					<span class="shortcut-plus">+</span>
+					<kbd>PrtSc</kbd>
+					<span class="shortcut-plus">or</span>
+					<kbd>PrtSc</kbd>
+				</div>
+				<div class="shortcut">
+					<p class="top">Then paste it:</p>
+					<kbd>Ctrl</kbd>
+					<span class="shortcut-plus">+</span>
+					<kbd>v</kbd>
+				</div>
+			</div>			
+		</div>		
+		<div id="attachmentButtons" class="dialog-buttons-highlighted button-group">
+			<button id="attachmentSubmit" type="submit" class="button button-left button-positive button-ok dialog-action-default" data-testid="attachmentsTabOkButton">
+				<span class="addAttachment">Add Attachment</span><span class="addImage">Add Images</span>
+			</button>
+			<a class="button button-left button-negative button-cancel dialog-action-close" data-testid="attachmentsDialogActionClose">
+				Cancel			</a>		
+		</div>
+	</form>
+</div>
+
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		App.Editor.init(443);
+	}
+);
+</script>
+<div class="attachments-new-dialog dialog dialog_attachment" id="attachmentNewDialogFile" data-testid="addAttachmentNewDialogFile">
+	<div class="dialog-title">
+		<span class="addAttachment" data-testid="addAttachmentDialog">Attach file</span>
+	</div>
+	
+<div class="attachments-filter bubble filter-bubble hidden" id="filterAttachmentsBubble" data-testid="addAttachmentFilterAttachmentsBubble">
+	<div id="filterAttachmentsContent" data-testid="attachmentsTabFilterAttachmentsContent" class="filter-bubble-inner">
+	</div>
+</div><script type="text/javascript">
+$(document).ready(function()
+{
+		App.Translations.add(
+		"attachments_drop",
+		"Drop files here to attach, or click to browse."	);
+		App.Translations.add(
+		"attachments_drop_image",
+		"Drop images here to embed, or click to browse."	);
+		App.Translations.add(
+		"attachments_drop_image_nobrowse",
+		"Drop images here to embed."	);
+		App.Translations.add(
+		"attachments_drop_notype",
+		"You can only add images to this text field (example: PNG or JPG files)."	);
+		App.Translations.add(
+		"attachments_drop_notype_canattach",
+		"You can only add images to this text field (example: PNG or JPG files). You can attach other file types to a case or result from the sidebar or result dialogs."	);
+		App.Translations.add(
+		"attachments_file_here",
+		"Drop file here, or click to browse."	);
+		App.Translations.add(
+		"attachments_remove_image",
+		"Remove"	);
+		App.Translations.add(
+		"attachments_drop_notype_canattach_jira",
+		"You can only add images to this text field (example: PNG or JPG files)."	);
+		App.Translations.add(
+		"attachments_confirm_replace",
+		"This action <strong>replaces current attachment with selected one. This will refresh all attachment\u2019s instances across your projects<\/strong> (except those on closed Runs & Plans). This cannot be undone. Do you wish to continue?"	);
+		App.Translations.add(
+		"attachments_replace_title",
+		"Replace?"	);
+		App.Translations.add(
+		"attachments_loading_error_title",
+		"Loading error"	);
+		App.Translations.add(
+		"attachments_loading_error_generic",
+		"<strong>An unexpected uploading error occurred.<\/strong><br><br>Try again!"	);
+		App.Translations.add(
+		"attachment_info_all_projects",
+		"All Projects"	);
+		App.Translations.add(
+		"attachments_confirm_delete",
+		"This <strong>deletes selected instances of your attachments.<\/strong> The files will keep on being stored on your Library. Go to Attachments on Data Storage to delete permanently."	);
+		App.Translations.add(
+		"attachments_confirm_delete_sql",
+		"This <strong>deletes selected instances of your attachments.<\/strong> The files will be removed from the Library if it is the last attachment present in the TestRail system otherwise go to Attachments on Data Storage to delete permanently."	);
+		App.Translations.add(
+		"attachments_confirm_complete_delete_sql",
+		"This operation will delete this <strong>last copy of the attachment<\/strong> and it will be <strong>permanently<\/strong> removed from TestRail Library. Please make sure to save any other work that uses the same attachment <strong>mentioned below<\/strong> before confirming this deletion."	);
+		App.Translations.add(
+		"attachments_delete",
+		"Delete"	);
+		App.Translations.add(
+		"attachment_upload_name_allowed",
+		""	);
+		App.Translations.add(
+		"attachments_drop_onlytext",
+		"You can add only text to this field."	);
+		App.Translations.add(
+		"attachment_info_currently_being_upgraded",
+		"Your attachments are currently being upgraded."	);
+		App.Translations.add(
+		"attachment_info_edit_delete_disabled",
+		"Edit and delete functions are temporarily disabled until the migration process is completed."	);
+		App.Translations.add(
+		"cases_unassigned",
+		"Unassigned"	);
+		App.Translations.add(
+		"cases_assignedto",
+		"Assigned To"	);
+		App.Translations.add(
+		"date_format_january",
+		"January"	);
+		App.Translations.add(
+		"date_format_february",
+		"February"	);
+		App.Translations.add(
+		"date_format_march",
+		"March"	);
+		App.Translations.add(
+		"date_format_april",
+		"April"	);
+		App.Translations.add(
+		"date_format_may",
+		"May"	);
+		App.Translations.add(
+		"date_format_june",
+		"June"	);
+		App.Translations.add(
+		"date_format_july",
+		"July"	);
+		App.Translations.add(
+		"date_format_august",
+		"August"	);
+		App.Translations.add(
+		"date_format_september",
+		"September"	);
+		App.Translations.add(
+		"date_format_october",
+		"October"	);
+		App.Translations.add(
+		"date_format_november",
+		"November"	);
+		App.Translations.add(
+		"date_format_december",
+		"December"	);
+		App.Translations.add(
+		"new_search_clear",
+		"Clear"	);
+		App.Translations.add(
+		"dataset_done_button",
+		"Done"	);
+		App.Translations.add(
+		"plans_run_name_too_long",
+		"Name is too long"	);
+		App.Translations.add(
+		"plans_name_too_long",
+		"Name is too long"	);
+		App.Translations.add(
+		"configs_dialog_name_too_long",
+		"Name is too long"	);
+		App.Translations.add(
+		"case_title_length_error",
+		"Title is too long"	);
+		App.Translations.add(
+		"reports_name_length_error",
+		"Name is too long"	);
+		App.Translations.add(
+		"error_name_is_required",
+		"Name is required"	);
+		App.Translations.add(
+		"date_format_januar",
+		""	);
+		App.Translations.add(
+		"date_format_februar",
+		""	);
+		App.Translations.add(
+		"date_format_m\u00e4rz",
+		""	);
+		App.Translations.add(
+		"date_format_april",
+		"April"	);
+		App.Translations.add(
+		"date_format_mai",
+		""	);
+		App.Translations.add(
+		"date_format_juni",
+		""	);
+		App.Translations.add(
+		"date_format_juli",
+		""	);
+		App.Translations.add(
+		"date_format_august",
+		"August"	);
+		App.Translations.add(
+		"date_format_september",
+		"September"	);
+		App.Translations.add(
+		"date_format_oktober",
+		""	);
+		App.Translations.add(
+		"date_format_november",
+		"November"	);
+		App.Translations.add(
+		"date_format_dezember",
+		""	);
+		App.Translations.add(
+		"date_format_enero",
+		""	);
+		App.Translations.add(
+		"date_format_febrero",
+		""	);
+		App.Translations.add(
+		"date_format_marzo",
+		""	);
+		App.Translations.add(
+		"date_format_abril",
+		""	);
+		App.Translations.add(
+		"date_format_mayo",
+		""	);
+		App.Translations.add(
+		"date_format_junio",
+		""	);
+		App.Translations.add(
+		"date_format_julio",
+		""	);
+		App.Translations.add(
+		"date_format_agosto",
+		""	);
+		App.Translations.add(
+		"date_format_septiembre",
+		""	);
+		App.Translations.add(
+		"date_format_octubre",
+		""	);
+		App.Translations.add(
+		"date_format_noviembre",
+		""	);
+		App.Translations.add(
+		"date_format_diciembre",
+		""	);
+		App.Translations.add(
+		"date_format_janvier",
+		""	);
+		App.Translations.add(
+		"date_format_f\u00e9vrier",
+		""	);
+		App.Translations.add(
+		"date_format_mars",
+		""	);
+		App.Translations.add(
+		"date_format_avril",
+		""	);
+		App.Translations.add(
+		"date_format_mai",
+		""	);
+		App.Translations.add(
+		"date_format_juin",
+		""	);
+		App.Translations.add(
+		"date_format_juillet",
+		""	);
+		App.Translations.add(
+		"date_format_ao\u00fbt",
+		""	);
+		App.Translations.add(
+		"date_format_septembre",
+		""	);
+		App.Translations.add(
+		"date_format_octobre",
+		""	);
+		App.Translations.add(
+		"date_format_novembre",
+		""	);
+		App.Translations.add(
+		"date_format_d\u00e9cembre",
+		""	);
+	});
+</script>
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		App.Dropzone.init();
+	}
+);
+</script>
+
+<input id="newAttachments" type="hidden">
+<input id="projectId" type="hidden" value="">
+<div class="attachments-library attachment-library-dialog" data-testid="addAttachmentLibraryDialog">
+		<div>
+		<div style="float: left">
+			<strong class="attachment-library-title">Media Library</strong>
+						<a id="libraryAddAttachment" data-testid="addAttachmentsLibraryAddAttachment" class="button button-left button-add" tabindex="0">Add New</a>
+						<a id="libraryDeleteAttachment" data-testid="attachmentsTabLibraryDeleteAttachment" style="display: none;" class="button button-left button-negative button-delete" href="javascript:void(0)" onclick="this.blur(); App.Dialogs.remove('This action <strong>deletes selected attachment/s and all their instances across your projects</strong> (except those on closed Test Runs &amp; Plans) permanently. This cannot be undone. Do you wish to continue?', null, null, null, function() { App.Attachments.removeAttachments(); }, null);; return false;">Delete</a>
+		</div>
+
+		<div style="float: right">
+			<span class="h1-additional" id="attachmentsFilterOption">
+				Sort:				<a id="attachments-library-sortby" data-testid="attachmentsTabAttachmentsLibrarySortby" href="#sortDropdown" class="link link-dashed dropdownLink">
+
+					<span id="attachmentsByName">
+						Date					</span>
+				</a>
+				<span id="orderByAsc" class="hidden"><div class="icon-asc"></div></span>
+				<span id="orderByDesc" class=""><div class="icon-desc"></div></span>
+				&nbsp;|&nbsp;
+				Filter:																<a class="link link-dashed" href="javascript:void(0)" onclick="this.blur(); App.Attachments.filterAttachments(event); return false;" id="attachmentFilterByChange" data-testid="attachmentsTabAttachmentFilterByChange"><span id="attachmentFilterByEmpty" class="">None</span><span id="attachmentFilterByInfo" class="hidden toolbar-highlighted"></span></a>
+				<span id="attachmentFilterByBusy" data-testid="attachmentsTabAttachmentFilterByBusy" class="busy"><div class="icon-progress-inline"></div></span>
+				<span id="attachmentFilterByReset" class="hidden">
+					<a href="javascript:void(0)" onclick="this.blur(); App.Attachments.filterReset(); return false;" class="link-tooltip" tooltip-text="Reset filters"><div class="icon-orderreset"></div></a>
+				</span>
+
+				<input type="text" name="search" id="libraryAttachmentsSearch" data-testid="attachmentsTabLibraryAttachmentsSearch" class="attachment-library-search">
+			</span>
+
+			<div id="sortDropdown" data-testid="attachmentsTabSortDropdown" class="dropdown dropdown-menu sortDropdown  " style="position: fixed; min-width: 100px; z-index : 100;">
+	<ul>
+		<li><a class="dropdown-menu-link" href="javascript:void(0)" onclick="this.blur(); App.Attachments.sortAttachments('created_on'); return false;">Date</a></li>
+		<li><a class="dropdown-menu-link" href="javascript:void(0)" onclick="this.blur(); App.Attachments.sortAttachments('name'); return false;">Name</a></li>
+		<li><a class="dropdown-menu-link" href="javascript:void(0)" onclick="this.blur(); App.Attachments.sortAttachments('size'); return false;">Size</a></li>
+	</ul>
+</div>		</div>
+	</div>
+
+	
+	<div class="frolaAttachmentpop" style="margin-top: 40px; clear: both; background-color: white; height: 361px; overflow-y: auto;" id="attachmentsNewList" data-testid="attachmentsTabAttachmentsNewList">
+</div>
+<div id="attachmentsPagination" style="margin-bottom: 10px;"></div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+	App.Attachments.orderByOptions = {"created_on":"Date","name":"Name","size":"Size"};
+	$('#libraryAddAttachment').on('keydown', function(e) {
+		if (e.key === "Enter" || e.keyCode === 13) {
+			this.click();
+		}
+	});
+	$('#attachments-library-sortby').on('keydown', function(e) {
+		if (e.key === "Enter" || e.keyCode === 13) {
+			e.preventDefault();
+			$(this).click();
+		}
+	});
+	App.Controls.triggerClickOnEnter('#libraryDeleteAttachment', true);
+	App.Controls.triggerClickOnEnter('#attachmentFilterByChange');
+	App.Controls.triggerClickOnEnter('.dropdown-menu-link');
+	App.Controls.triggerClickOnEnter('.link-noline');
+
+	App.Controls.handleShiftTabDropdown('#attachments-library-sortby', '#sortDropdown', App.Dropdowns.closeAll);
+	App.Controls.handleFirstElementTabIn('#attachments-library-sortby', '#sortDropdown');
+	App.Controls.handleLastElementTabOut('#attachments-library-sortby', '#sortDropdown', App.Dropdowns.closeAll);
+
+	App.Controls.handleFirstElementTabIn('#attachmentFilterByChange', '#filterAttachmentsContent');
+
+	var defaultTimeout = null;
+	$('#libraryAttachmentsSearch').on('keyup', function() {
+		if (defaultTimeout != null) clearTimeout(defaultTimeout);
+		defaultTimeout = setTimeout(
+			function() {
+				defaultTimeout = null;
+				App.Attachments.reloadRepository();
+			},
+			500
+		);
+	});
+
+});
+</script>
+	<div id="attachmentNewButtons" data-testid="addAttachmentNewButtons" class="dialog-buttons-highlighted button-group">
+		<div style="margin-top: 6px; float: left;">Maximum file size: 256 MB.</div>
+		<div class="page-title-content-header">
+			<a class="button button-right button-negative button-cancel dialog-action-close" tabindex="0" data-testid="attachmentsDialogActionClose">
+				Cancel			</a>
+			<button id="attachmentNewSubmit" data-testid="addAttachmentDialogSubmit" type="submit" class="button button-right button-positive button-ok" style="margin-left: 7px">
+				<span class="addAttachment">Attach</span>
+			</button>
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(function() {
+		App.Controls.triggerClickOnEnter('#attachmentNewSubmit');
+		App.Controls.triggerClickOnEnter('#attachmentNewButtons .dialog-action-close', true);
+	});
+</script>
+<div class="sidebar-inner">
+	
+<p class="attach-file-header">Add File</p>
+<input id="attachmentsToDelete" type="hidden">
+<div id="entityAttachmentListWrapper-969b8a5b-b573-4bdb-9951-bc05b78dbf7d" class="attachment-list-wrapper milestone-attachment-list-wrapper mb-0" deleteids="">
+	<div id="entityAttachmentList" data-testid="editCaseAttachmentList" class="attachment-list milestone-attachment-list dz-persistent">
+					<p class="attach-file-description">Drop files here to attach, or click on "+" to browse</p>
+										<div id="entityAttachmentListAdd" data-testid="editCaseEntityAttachmentListAdd" style="display: none;" class="attachment-list-add" tabindex="0" onclick="App.Attachments.showDialog('#entityAttachmentListWrapper-969b8a5b-b573-4bdb-9951-bc05b78dbf7d', 443, '', 'run', { 'inputParent': '#form' });">
+			<div class="sidebar-attachment-list-add-icon"></div>
+		</div>
+						<div id="entityAttachmentListRemove" data-testid="entityAttachmentListRemove" style="display: none;" class="attachment-list-delete" tabindex="0" href="javascript:void(0)" onclick="this.blur(); App.Attachments.entityRemoveAttachmentsDialog('This <strong>deletes selected instances of your attachments.</strong> The files will keep on being stored on your Library. Go to Attachments on Data Storage to delete permanently.', '443', 'run', '#entityAttachmentListWrapper-969b8a5b-b573-4bdb-9951-bc05b78dbf7d', '', '#form', null); return false;">
+			<div class="attachment-list-delete-icon"></div>
+			<span>Delete</span>
+		</div>
+				<div class="attachments-initial-control">
+						<div id="entityAttachmentListEmptyIcon" class="sidebar-attachment-list-empty-add" tabindex="0" onclick="App.Attachments.showDialog('#entityAttachmentListWrapper-969b8a5b-b573-4bdb-9951-bc05b78dbf7d', 443, '', 'run', { 'inputParent': '#form' });"></div>
+										<p id="entityAttachmentListDropzoneText" class="sidebar-attachment-list-dropzone-text" onclick="App.Attachments.showDialog('#entityAttachmentListWrapper-969b8a5b-b573-4bdb-9951-bc05b78dbf7d', 443, '', 'run', { 'inputParent': '#form' });">
+					
+				</p>
+					</div>
+	</div>
+</div>
+
+	<script type="text/javascript">
+		$(function () {
+				App.Attachments.init({
+					selector: '#entityAttachmentListWrapper-969b8a5b-b573-4bdb-9951-bc05b78dbf7d #entityAttachmentList',
+					itemsParent: '#entityAttachmentListWrapper-969b8a5b-b573-4bdb-9951-bc05b78dbf7d',
+					inputParent: '#form',
+					project_id: 443,
+					entity_id: '',
+					entity_type: 'run',
+					clickable: false
+				});
+				App.Controls.triggerClickOnEnter('#entityAttachmentListEmptyIcon');
+				App.Controls.triggerClickOnEnter('#entityAttachmentListAdd');
+				App.Controls.triggerClickOnEnter('#entityAttachmentListRemove');
+			}
+		);
+	</script>
+
+<script type="text/javascript">
+	$(function () {
+		var wrapperParent = '#entityAttachmentListWrapper-969b8a5b-b573-4bdb-9951-bc05b78dbf7d';
+		$(wrapperParent).attr('deleteIds', '');
+		App.Attachments.lazyLoad(wrapperParent + ' #entityAttachmentList', 0.35);
+		App.Attachments.dontShowEntityDeleteDialog = false;
+	});
+</script>
+</div>
+				</div>
+						</div>
+		</div>
+			<div id="sidebar-splitter" class="column splitter sidebar-splitter" style="left: 256px;">
+	</div>
+	<div id="spacer" class="column " style="width: 256px; height: calc(100vh - 48px);"></div>
+		<div id="content" class="column content ">
+		
+            
+            					<div id="content-header" class="content-header content-header-default">
+	<div class="content-header-inner">
+		<div class="content-header-result" style=""></div>
+								                                    				<div class="content-header-title page_title" data-testid="testCaseContentHeaderTitle">
+																				Add Test Case					</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$("#sites").prop("selectedIndex", 0);
+</script>
+																						<div id="content-inner" data-testid="contentInnerTestId" class="content-inner goals-clear">
+																	            <p id="restoreBackup" class="top message message-hint" data-testid="backupsTabsMessageHint" style="margin-bottom: 1.5em; display:none">
+    <strong>Restore requested.</strong>
+    <a href="javascript:void(0)" onclick="this.blur(); App.Admin.cancelRestoration(); return false;" id="cancel_restoration_message_link" data-testid="backupsTabsCancelRestorationMessageLink">Cancel restoration?</a>
+</p>
+
+<script>
+    const positionFilterBubble = () => {
+		const contentInner = $('#content-inner');
+		const contentInnerWidth = contentInner.outerWidth();
+		const MAX_WIDTH_TO_SHOW_TWO_COLUMNS = 750;
+
+		const descriptionHeight = $('#description').height();
+		const margin = descriptionHeight > 0 ? 21 : 0;
+
+		const contentHeaderInnerHeight = $('.content-header-inner').outerHeight();
+		const contentHeaderHeight = $('#content-header').outerHeight();
+
+		const successMessageHeight = $('.message-success').outerHeight();
+		const successMessageMargin =  successMessageHeight > 0 ? 17.5 : 0;
+
+		// calculating top offset as per screen size
+		const filterTopOffset = (contentInnerWidth < MAX_WIDTH_TO_SHOW_TWO_COLUMNS ? 386 : 326) + contentHeaderInnerHeight + successMessageHeight + successMessageMargin;
+		if(!$('#filterTestsBubble').hasClass('report_bubble')){
+			contentInner.find('#filterTestsBubble').css('top', filterTopOffset);
+		}
+		const caseTopOffset = 66 + descriptionHeight + margin + contentHeaderHeight + successMessageHeight + successMessageMargin;
+		const filterCasesBubble = contentInner.find('#filterCasesBubble');
+		if(!$('#filterCasesBubble').hasClass('reports-filter-bubble')){
+			filterCasesBubble.css('top', caseTopOffset);
+		}
+	}
+    function adjustHeaderPosition() {
+        const $header = $('#top');
+        if ($(window).width() < 960) {
+          let scrollLeft = $(window).scrollLeft();
+          if($header.outerWidth() - $(window).width()  >= scrollLeft) {
+              $header.css('left', -scrollLeft);
+          }
+        } else {
+          $header.css('left', '0');
+        }
+    }
+    $(window).on('scroll resize', function() {
+        adjustHeaderPosition();
+    });
+    $(window).ready(function() {
+        adjustHeaderPosition();
+    })
+    $(window).resize(function() {
+        setTimeout(positionFilterBubble, 10);
+    });
+	
+	$(document).ready(function() {
+		App.Controls.handleShiftTabDropdown('#navigation-menu', '#helpDropdown', App.Dropdowns.closeAll);
+		App.Controls.handleFirstElementTabIn('#navigation-menu', '#helpDropdown');
+		App.Controls.handleLastElementTabOut('#navigation-menu', '#helpDropdown', App.Dropdowns.closeAll);
+		
+		App.Controls.handleShiftTabDropdown('#navigation-user', '#userDropdown', App.Dropdowns.closeAll);
+		App.Controls.handleFirstElementTabIn('#navigation-user', '#userDropdown');
+		App.Controls.handleLastElementTabOut('#navigation-user', '#userDropdown', App.Dropdowns.closeAll);
+		
+		App.Controls.handleShiftTabDropdown('.projectOpen', '#projectsDropdown', App.Sidebar.toggleProjectsDropdown);
+		App.Controls.handleFirstElementTabIn('.projectOpen', '#projectsDropdown');
+		App.Controls.handleLastElementTabOut('.projectOpen', '#projectsDropdown', App.Sidebar.toggleProjectsDropdown);
+		
+		App.Controls.handleShiftTabDropdown('.dynamic_add', '#dynamicAdd', App.Dropdowns.closeAll);
+		App.Controls.handleFirstElementTabIn('.dynamic_add', '#dynamicAdd');
+		App.Controls.handleLastElementTabOut('.dynamic_add', '#dynamicAdd', App.Dropdowns.closeAll);
+
+		App.Controls.handleShiftTabDropdown('.button-report', '#reportDropdown', App.Dropdowns.closeAll);
+		App.Controls.handleFirstElementTabIn('.button-report', '#reportDropdown');
+		App.Controls.handleLastElementTabOut('.button-report', '#reportDropdown', App.Dropdowns.closeAll);
+		
+		App.Controls.handleShiftTabDropdown('.button-defect', '#defectDropdown', App.Dropdowns.closeAll);
+		App.Controls.handleFirstElementTabIn('.button-defect', '#defectDropdown');
+		App.Controls.handleLastElementTabOut('.button-defect', '#defectDropdown', App.Dropdowns.closeAll);
+		
+		App.Controls.handleShiftTabDropdown('#groupByChange', '#groupDropdown', App.Dropdowns.closeAll);
+		App.Controls.handleFirstElementTabIn('#groupByChange', '#groupDropdown');
+		App.Controls.handleLastElementTabOut('#groupByChange', '#groupDropdown', App.Dropdowns.closeAll);
+
+		App.Controls.handleShiftTabDropdown('#filterByChange', '#filterBubble', App.Todos.cancelFilter);
+		App.Controls.handleFirstElementTabIn('#filterByChange', '#filterBubble');
+		App.Controls.handleLastElementTabOut('#filterByChange', '#filterBubble', App.Todos.cancelFilter);
+		
+		App.Controls.handleShiftTabDropdown('.exportDropdownLink', '#exportDropdown', App.Dropdowns.closeAll);
+		App.Controls.handleFirstElementTabIn('.exportDropdownLink', '#exportDropdown');
+		App.Controls.handleLastElementTabOut('.exportDropdownLink', '#exportDropdown', App.Dropdowns.closeAll);
+		
+		App.Controls.handleShiftTabDropdown('.importDropdownLink', '#importDropdown', App.Dropdowns.closeAll);
+		App.Controls.handleFirstElementTabIn('.importDropdownLink', '#importDropdown');
+		App.Controls.handleLastElementTabOut('.importDropdownLink', '#importDropdown', App.Dropdowns.closeAll);
+		
+		$('#inProgressLink').on('click', function() {
+			$(this).focus();
+		});
+		$('#inProgressLink').on('keydown', function(e) {
+			if((e.key === "Tab" || e.keyCode === 9) && $('#inProgressDropdown').is(':visible') && !e.shiftKey) {
+				if ($('#inProgressDropdown .grid').length > 0) {
+					$('#inProgressDropdown .grid a').last().on('keydown', function(e) {
+						if ((e.key === "Tab" || e.keyCode === 9) && !e.shiftKey) {
+							$('#inProgressLink').click();
+						}
+					});
+				} else {
+					$(this).click();
+				}
+			}
+			else if ((e.key === "Tab" || e.keyCode === 9) && e.shiftKey && $('#inProgressDropdown').is(':visible')) {
+				$(this).click();
+			}
+		});
+		
+		App.Controls.triggerClickOnEnter('.projectOpen');
+		App.Controls.triggerClickOnEnter('#sidebar-tree-header');
+		
+		$('.projectOpen').on('focus', function () {
+			var span = document.querySelector('.main-sidebar-header');
+			this.style.setProperty('outline', 'none', 'important');
+			span.classList.add('outline-focus');
+		});
+
+		$('.projectOpen').on('blur', function () {
+			var span = document.querySelector('.main-sidebar-header');
+			span.classList.remove('outline-focus');
+		});
+	});
+
+</script>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+		App.Translations.add(
+		"cases_table_header_text",
+		" Header "	);
+		App.Translations.add(
+		"cases_table_row_text",
+		" Row "	);
+	});
+</script>
+
+
+
+<form action="index.php?/cases/add/256&amp;referer=suites/view/256" id="form" method="post"><input type="hidden" name="_token" value="9/mCTZQs3Cj1AgGzWi9u">
+
+<input type="hidden" id="attachments" name="attachments" value="">
+<input type="hidden" id="js_test" name="js_test" value="0">
+<input type="hidden" id="source" name="source" value="">
+
+<div id="form-controls">
+	<div class="form-group form-group-main">
+	<label for="title">Title		<span class="form-required">*</span></label>
+	<div id="title_error" class="message-error" style="margin-bottom: 5px; display: none;">Title is too long</div><input class="form-control form-control-full form-fields " type="text" name="title" id="title" data-testid="addEditCaseTitle" maxlength="250" value="">
+</div>
+
+<div class="io-container io-framed form-group table" data-testid="editCaseIoContainer">
+
+    <div class="column column-p4 column-inline-block">
+        <label class="io-label" for="section_id">Section            <span class="form-required">*</span></label>
+        <select name="section_id" id="section_id" data-testid="editCaseSectionId" class="form-control form-control-full form-select searchable " style="display: none;">
+                        <option value="-1">
+                Test Cases              </option>
+                  </select><div class="chosen-container chosen-container-single" title="" id="section_id_chosen" style="width: 0px;"><a class="chosen-single" data-testid="historyCompareToButton">
+  <span>
+                Test Cases              </span>
+  <div><b></b></div>
+</a>
+<div class="chosen-drop" data-testid="compareVersionDropDwonButton">
+  <div class="chosen-search">
+    <input class="chosen-search-input" type="text" autocomplete="off">
+  </div>
+  <ul class="chosen-results" data-testid="compareVersionOption"><li class="active-result result-selected" data-option-array-index="0">
+                Test Cases              </li></ul>
+</div></div>
+    </div>
+
+    <div class="column column-p4 column-inline-block">
+        <label class="io-label" for="template_id">Template            <span class="form-required">*</span>
+            <span id="templateBusy" class="busy"><div class="icon-progress-inline"></div></span>
+        </label>
+        <select class="form-control form-control-full form-select searchable " name="template_id" id="template_id" data-testid="editCaseTemplateId" style="display: none;">
+                    <option value="4">Behaviour Driven Development</option>
+                    <option value="3">Exploratory Session</option>
+                    <option value="2">Test Case (Steps)</option>
+                    <option value="1" selected="selected">Test Case (Text)</option>
+                </select><div class="chosen-container chosen-container-single" title="" id="template_id_chosen" style="width: 0px;"><a class="chosen-single" data-testid="historyCompareToButton">
+  <span>Test Case (Text)</span>
+  <div><b></b></div>
+</a>
+<div class="chosen-drop" data-testid="compareVersionDropDwonButton">
+  <div class="chosen-search">
+    <input class="chosen-search-input" type="text" autocomplete="off">
+  </div>
+  <ul class="chosen-results" data-testid="compareVersionOption"><li class="active-result" data-option-array-index="0">Behaviour Driven Development</li><li class="active-result" data-option-array-index="1">Exploratory Session</li><li class="active-result" data-option-array-index="2">Test Case (Steps)</li><li class="active-result result-selected" data-option-array-index="3">Test Case (Text)</li></ul>
+</div></div>
+    </div>
+
+    <div class="column column-p4 column-inline-block">
+        <label class="io-label" for="type_id">Type            <span class="form-required">*</span></label>
+        <select name="type_id" id="type_id" data-testid="editCaseTypeId" class="form-control form-control-full form-select searchable " style="display: none;">
+                                      <option value="1">Acceptance</option>
+                                                    <option value="2">Accessibility</option>
+                                                    <option value="3">Automated</option>
+                                                    <option value="4">Compatibility</option>
+                                                    <option value="5">Destructive</option>
+                                                    <option value="6">Functional</option>
+                                                    <option value="7" selected="selected">Other</option>
+                                                    <option value="8">Performance</option>
+                                                    <option value="9">Regression</option>
+                                                    <option value="10">Security</option>
+                                                    <option value="11">Smoke &amp; Sanity</option>
+                                                    <option value="12">Usability</option>
+                                </select><div class="chosen-container chosen-container-single" title="" id="type_id_chosen" style="width: 0px;"><a class="chosen-single" data-testid="historyCompareToButton">
+  <span>Functional</span>
+  <div><b></b></div>
+</a>
+<div class="chosen-drop" data-testid="compareVersionDropDwonButton">
+  <div class="chosen-search">
+    <input class="chosen-search-input" type="text" autocomplete="off">
+  </div>
+  <ul class="chosen-results" data-testid="compareVersionOption"><li class="active-result" data-option-array-index="0">Acceptance</li><li class="active-result" data-option-array-index="1">Accessibility</li><li class="active-result" data-option-array-index="2">Automated</li><li class="active-result" data-option-array-index="3">Compatibility</li><li class="active-result" data-option-array-index="4">Destructive</li><li class="active-result result-selected" data-option-array-index="5">Functional</li><li class="active-result result-selected" data-option-array-index="6">Other</li><li class="active-result" data-option-array-index="7">Performance</li><li class="active-result" data-option-array-index="8">Regression</li><li class="active-result" data-option-array-index="9">Security</li><li class="active-result" data-option-array-index="10">Smoke &amp; Sanity</li><li class="active-result" data-option-array-index="11">Usability</li></ul>
+</div></div>
+    </div>
+
+    <div class="column column-p4 column-inline-block">
+        <label class="io-label" for="priority_id">Priority            <span class="form-required">*</span></label>
+        <select name="priority_id" id="priority_id" data-testid="editCasePriorityId" class="form-control form-control-full form-select searchable " style="display: none;">
+                                      <option value="4">Critical</option>
+                                                    <option value="3">High</option>
+                                                    <option value="2" selected="selected">Medium</option>
+                                                    <option value="1">Low</option>
+                                </select><div class="chosen-container chosen-container-single" title="" id="priority_id_chosen" style="width: 0px;"><a class="chosen-single" data-testid="historyCompareToButton">
+  <span>High</span>
+  <div><b></b></div>
+</a>
+<div class="chosen-drop" data-testid="compareVersionDropDwonButton">
+  <div class="chosen-search">
+    <input class="chosen-search-input" type="text" autocomplete="off">
+  </div>
+  <ul class="chosen-results" data-testid="compareVersionOption"><li class="active-result" data-option-array-index="0">Critical</li><li class="active-result result-selected" data-option-array-index="1">High</li><li class="active-result result-selected" data-option-array-index="2">Medium</li><li class="active-result" data-option-array-index="3">Low</li></ul>
+</div></div>
+    </div>
+
+    
+        <div class="column column-p4 column-inline-block">
+        <label class="io-label" for="assigned_to_id">
+            <strong>Assigned To</strong>
+        </label>
+        <select class="form-control form-control-full form-select searchable " name="assigned_to_id" id="assigned_to_id" style="display: none;">
+            <option value="">None</option>
+            <option value="1">Me</option>
+                        <option value="1">
+                Vitali Chatyrka            </option>
+                    </select><div class="chosen-container chosen-container-single" title="" id="assigned_to_id_chosen" style="width: 0px;"><a class="chosen-single" data-testid="historyCompareToButton">
+  <span>None</span>
+  <div><b></b></div>
+</a>
+<div class="chosen-drop" data-testid="compareVersionDropDwonButton">
+  <div class="chosen-search">
+    <input class="chosen-search-input" type="text" autocomplete="off">
+  </div>
+  <ul class="chosen-results" data-testid="compareVersionOption"><li class="active-result result-selected" data-option-array-index="0">None</li><li class="active-result" data-option-array-index="1">Me</li><li class="active-result" data-option-array-index="2">
+                Vitali Chatyrka            </li></ul>
+</div></div>
+    </div>
+    
+        <div class="column column-p4 column-inline-block">
+        <label class="io-label" for="estimate">
+            Estimate                    </label>
+        <input class="form-control form-control-full form-fields" "="" type="text" name="estimate" id="estimate" data-testid="editCaseEstimate" maxlength="250" value="">
+    </div>
+    
+                
+                            <div class="column column-inline-block column-p4">
+                <label class="io-label" for="custom_automation_type">Automation Type                                </label>
+                <select name="custom_automation_type" id="custom_automation_type" source_id="custom_automation_type" class="custom form-control form-control-full form-select searchable " style="display: none;">
+<option value=""></option>
+<option value="0" selected="selected"> None</option>
+<option value="1"> Ranorex</option>
+</select><div class="chosen-container chosen-container-single" title="" id="custom_automation_type_chosen" style="width: 0px;"><a class="chosen-single" data-testid="historyCompareToButton">
+  <span> None</span>
+  <div><b></b></div>
+</a>
+<div class="chosen-drop" data-testid="compareVersionDropDwonButton">
+  <div class="chosen-search">
+    <input class="chosen-search-input" type="text" autocomplete="off">
+  </div>
+  <ul class="chosen-results" data-testid="compareVersionOption"></ul>
+</div></div>                            </div>
+                
+        <div class="column-full-width column">
+        <label class="io-label" for="labels">
+            Add Labels        </label>
+               
+        <div class="column-p4">
+            <div class="labels-selector--wrap">
+    <input type="hidden" name="labels" value="" id="labels-control" data-testid="editCaseLabels" class="dirty-trackable labels-selector " data-create="1">
+               
+    <template data-role="tag">    
+        <span class="labels-selector--tag-wrap">
+            <span class="labels-selector--tag">🏷️</span>
+            <button type="button" class="labels-selector--tag-remove">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="2" d="M5 5L11 11M11 5L5 11"></path>
+                </svg>
+            </button>
+        </span>
+    </template>
+    
+    <template data-role="suggestion">
+        <li>
+            <button type="button" class="labels-selector--suggestion"></button>
+        </li>
+    </template>
+
+    <div class="labels-selector--control form-control form-control-full"> 
+        <span class="labels-selector--search-wrap">
+            <input type="search" class="labels-selector--search" id="labels-selector-search" maxlength="20" placeholder="Start typing" autocomplete="off">
+        </span>
+    </div>
+    
+    <div class="labels-selector--suggestions">
+        <button type="button" class="labels-selector--suggestions-close">
+            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1em; height: 1em;" viewBox="0 0 16 16">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="2" d="M2 2l12 12M2 14L14 2"></path>
+            </svg>
+        </button>
+
+        <ul class="labels-selector--suggestions-list">
+        </ul>
+    </div>
+    
+    <div class="labels-selector--error"></div>
+    
+</div>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+		App.Translations.add(
+		"validate_labels_max_selection_reached",
+		"You have reached max {0} labels limit. You can\u2019t add more labels."	);
+		App.Translations.add(
+		"projects_labels_suggestions_already_used",
+		"This label is already assigned."	);
+		App.Translations.add(
+		"projects_labels_suggestions_no_results",
+		"No matches found."	);
+		App.Translations.add(
+		"projects_labels_suggestions_failed",
+		"Failed to load suggestions."	);
+		App.Translations.add(
+		"projects_labels_suggestions_new",
+		"New Label"	);
+		App.Translations.add(
+		"projects_labels_error_max_length",
+		"Label name must be less than 20 characters"	);
+		App.Translations.add(
+		"projects_labels_error_comma",
+		"Label name cannot contain commas"	);
+	});
+</script>        </div>
+    </div>
+    
+            <div class="column-full-width symbol-counter-textarea-wrapper column">
+                                        <label class="io-label" for="refs">
+                <span class="text-secondary pull-right" style="font-weight: normal; padding-right: 1px"><a class="link" target="_blank" href="https://www.gurock.com/testrail/docs/integrate/references/introduction" tabindex="-1">?</a></span>
+                    References                                    </label>
+                        <textarea class="no-js-resizable symbol-counter-textarea resizable-vertical form-control form-control-full form-fields " name="refs" id="refs" data-testid="editCaseRefs" maxlength="2000" rows="5" placeholder="Start typing"></textarea><div class="symbol-counter-adjuster"></div><div class="symbol-counter">0 / 2000</div>
+            <span class="hidden symbol-counter-error">You have reached max 2000 characters limit. You can't type more.</span>
+        </div>
+    </div>
+
+
+		<div class="form-group">
+		<label for="custom_preconds">
+							<span class="form-toolbar" style="padding-top: 0px">
+	<a href="javascript:void(0)" onclick="this.blur(); App.Editor.addTable('#custom_preconds' + '_display'); return false;" class="link-tooltip addTableLink" tooltip-text="Add a table to this text field.">
+        <div class="icon-markdown-table"></div></a>
+            <a href="javascript:void(0)" onclick="this.blur(); App.Editor.addImage('#custom_preconds', 443, 'case', ''); return false;" class="link-tooltip addImageLink" tooltip-text="Add an image to this text field.">
+            <div class="icon-markdown-image"></div></a>
+        <a href="https://www.gurock.com/testrail/docs/user-guide/getting-started/editor" class="link-tooltip" tooltip-text="Open the editor formatting reference." target="_blank">
+        <div class="icon-markdown-help"></div>
+    </a>
+			<a class="addcode link-tooltip" tooltip-text="Insert a Variable. You can also perform this by typing “%” inline." tabindex="0" onclick="this.blur(); App.Autocomplete.addCode(event, 0); return false;">
+			<div class="icon-button-datasets icon-button-datasets-head"></div>
+		</a>
+	</span>
+
+	<script type="text/javascript">
+			$(document).ready(
+					function() {
+						$('.form-group [contenteditable="true"]').variables();
+				}
+			);
+			$('.addcode').off('keydown').on('keydown', function(e) {
+				if (e.key === "Enter" || e.keyCode === 13) {
+					$(this).click();
+				}
+			});
+	</script>
+						Preconditions					</label>
+        <div class="textarea-resizable editor-bindable attachment-list-wrapper" id="custom_preconds_attachments_wrapper" data-attribute="custom_preconds">
+    <div contenteditable="true" class="form-control form-control-full field-editor attachment_popup ui-autocomplete-input" id="custom_preconds_display" data-attr="custom_preconds" placeholder="" element-index="0" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></div>
+    <input class="custom" type="hidden" value="" id="custom_preconds" name="custom_preconds">
+</div>
+
+		<div id="custom_preconds_display_drop" class="dropzone dz-clickable" rel="custom_preconds_display" dialog="" data-project-id="443"><div class="dz-default dz-message"><button class="dz-button" type="button">Drop images here to embed.</button></div></div>
+			
+		<script type="text/javascript">
+                $(document).ready(function () {
+                App.Editor.applyDrop({
+                    'selector': '#' + 'custom_preconds_display_drop',
+                    'control': '#' + 'custom_preconds_display',
+                    'project_id': 443,
+                    'can_attach': true,
+                    'entity_type': 'case',
+                    'entity_id': ''
+                });
+            }
+        );
+        	</script>
+	<script type="text/javascript">
+    $(document).ready(
+        function() {
+            if (window.location.search.indexOf('/suites/view/') > -1) {
+                $.each($('.form-group textarea'), function(index, element) {
+                    $(element).addClass('form-fields');
+                });
+            }
+			if ($('#custom_preconds_display').find('.attachment-list-delete-inline').length === 0) {
+				let attachments_delete_lang = "This <strong>deletes selected instances of your attachments.</strong> The files will keep on being stored on your Library. Go to Attachments on Data Storage to delete permanently.";
+				let attachments_confirm_msg = attachments_delete_lang.replace(/'/g, "\\'");
+				let html_section = `<div contenteditable="false" class="inlineAttachmentListRemove attachment-list-delete-inline" style="display: none;" href="javascript:void(0)" onclick="App.Attachments.entityRemoveAttachmentsDialog('${attachments_confirm_msg}', '443', 'case', '#custom_preconds_attachments_wrapper', ''); $('#custom_preconds_display .inlineAttachmentListRemove').hide(); return false;"><div class="attachment-list-delete-icon"></div><span>Delete</span></div><span contenteditable="false" class="inline-attachment-list-whitespace"></span>`;
+				$('#custom_preconds_display .attachment-block:last-child').after(html_section);
+			}
+        }
+    );
+</script>					<div class="form-description form-description-full">
+             <!-- Changing the $text_format_type to $labeltext_setting -->
+			The preconditions of this test case. Reference other test cases with [C#] (e.g. [C17]).			</div>
+			</div>
+		<div class="form-group">
+		<label for="custom_steps">
+							<span class="form-toolbar" style="padding-top: 0px">
+	<a href="javascript:void(0)" onclick="this.blur(); App.Editor.addTable('#custom_steps' + '_display'); return false;" class="link-tooltip addTableLink" tooltip-text="Add a table to this text field.">
+        <div class="icon-markdown-table"></div></a>
+            <a href="javascript:void(0)" onclick="this.blur(); App.Editor.addImage('#custom_steps', 443, 'case', ''); return false;" class="link-tooltip addImageLink" tooltip-text="Add an image to this text field.">
+            <div class="icon-markdown-image"></div></a>
+        <a href="https://www.gurock.com/testrail/docs/user-guide/getting-started/editor" class="link-tooltip" tooltip-text="Open the editor formatting reference." target="_blank">
+        <div class="icon-markdown-help"></div>
+    </a>
+			<a class="addcode link-tooltip" tooltip-text="Insert a Variable. You can also perform this by typing “%” inline." tabindex="0" onclick="this.blur(); App.Autocomplete.addCode(event, 1); return false;">
+			<div class="icon-button-datasets icon-button-datasets-head"></div>
+		</a>
+	</span>
+
+	<script type="text/javascript">
+			$(document).ready(
+					function() {
+						$('.form-group [contenteditable="true"]').variables();
+				}
+			);
+			$('.addcode').off('keydown').on('keydown', function(e) {
+				if (e.key === "Enter" || e.keyCode === 13) {
+					$(this).click();
+				}
+			});
+	</script>
+						Steps					</label>
+        <div class="textarea-resizable editor-bindable attachment-list-wrapper" id="custom_steps_attachments_wrapper" data-attribute="custom_steps">
+    <div contenteditable="true" class="form-control form-control-full field-editor attachment_popup ui-autocomplete-input" id="custom_steps_display" data-attr="custom_steps" placeholder="" element-index="1" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></div>
+    <input class="custom" type="hidden" value="" id="custom_steps" name="custom_steps">
+</div>
+
+		<div id="custom_steps_display_drop" class="dropzone dz-clickable" rel="custom_steps_display" dialog="" data-project-id="443"><div class="dz-default dz-message"><button class="dz-button" type="button">Drop images here to embed.</button></div></div>
+			
+		<script type="text/javascript">
+                $(document).ready(function () {
+                App.Editor.applyDrop({
+                    'selector': '#' + 'custom_steps_display_drop',
+                    'control': '#' + 'custom_steps_display',
+                    'project_id': 443,
+                    'can_attach': true,
+                    'entity_type': 'case',
+                    'entity_id': ''
+                });
+            }
+        );
+        	</script>
+	<script type="text/javascript">
+    $(document).ready(
+        function() {
+            if (window.location.search.indexOf('/suites/view/') > -1) {
+                $.each($('.form-group textarea'), function(index, element) {
+                    $(element).addClass('form-fields');
+                });
+            }
+			if ($('#custom_steps_display').find('.attachment-list-delete-inline').length === 0) {
+				let attachments_delete_lang = "This <strong>deletes selected instances of your attachments.</strong> The files will keep on being stored on your Library. Go to Attachments on Data Storage to delete permanently.";
+				let attachments_confirm_msg = attachments_delete_lang.replace(/'/g, "\\'");
+				let html_section = `<div contenteditable="false" class="inlineAttachmentListRemove attachment-list-delete-inline" style="display: none;" href="javascript:void(0)" onclick="App.Attachments.entityRemoveAttachmentsDialog('${attachments_confirm_msg}', '443', 'case', '#custom_steps_attachments_wrapper', ''); $('#custom_steps_display .inlineAttachmentListRemove').hide(); return false;"><div class="attachment-list-delete-icon"></div><span>Delete</span></div><span contenteditable="false" class="inline-attachment-list-whitespace"></span>`;
+				$('#custom_steps_display .attachment-block:last-child').after(html_section);
+			}
+        }
+    );
+</script>					<div class="form-description form-description-full">
+             <!-- Changing the $text_format_type to $labeltext_setting -->
+			The required steps to execute the test case.			</div>
+			</div>
+		<div class="form-group">
+		<label for="custom_expected">
+							<span class="form-toolbar" style="padding-top: 0px">
+	<a href="javascript:void(0)" onclick="this.blur(); App.Editor.addTable('#custom_expected' + '_display'); return false;" class="link-tooltip addTableLink" tooltip-text="Add a table to this text field.">
+        <div class="icon-markdown-table"></div></a>
+            <a href="javascript:void(0)" onclick="this.blur(); App.Editor.addImage('#custom_expected', 443, 'case', ''); return false;" class="link-tooltip addImageLink" tooltip-text="Add an image to this text field.">
+            <div class="icon-markdown-image"></div></a>
+        <a href="https://www.gurock.com/testrail/docs/user-guide/getting-started/editor" class="link-tooltip" tooltip-text="Open the editor formatting reference." target="_blank">
+        <div class="icon-markdown-help"></div>
+    </a>
+			<a class="addcode link-tooltip" tooltip-text="Insert a Variable. You can also perform this by typing “%” inline." tabindex="0" onclick="this.blur(); App.Autocomplete.addCode(event, 2); return false;">
+			<div class="icon-button-datasets icon-button-datasets-head"></div>
+		</a>
+	</span>
+
+	<script type="text/javascript">
+			$(document).ready(
+					function() {
+						$('.form-group [contenteditable="true"]').variables();
+				}
+			);
+			$('.addcode').off('keydown').on('keydown', function(e) {
+				if (e.key === "Enter" || e.keyCode === 13) {
+					$(this).click();
+				}
+			});
+	</script>
+						Expected Result					</label>
+        <div class="textarea-resizable editor-bindable attachment-list-wrapper" id="custom_expected_attachments_wrapper" data-attribute="custom_expected">
+    <div contenteditable="true" class="form-control form-control-full field-editor attachment_popup ui-autocomplete-input" id="custom_expected_display" data-attr="custom_expected" placeholder="" element-index="2" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></div>
+    <input class="custom" type="hidden" value="" id="custom_expected" name="custom_expected">
+</div>
+
+		<div id="custom_expected_display_drop" class="dropzone dz-clickable" rel="custom_expected_display" dialog="" data-project-id="443"><div class="dz-default dz-message"><button class="dz-button" type="button">Drop images here to embed.</button></div></div>
+			
+		<script type="text/javascript">
+                $(document).ready(function () {
+                App.Editor.applyDrop({
+                    'selector': '#' + 'custom_expected_display_drop',
+                    'control': '#' + 'custom_expected_display',
+                    'project_id': 443,
+                    'can_attach': true,
+                    'entity_type': 'case',
+                    'entity_id': ''
+                });
+            }
+        );
+        	</script>
+	<script type="text/javascript">
+    $(document).ready(
+        function() {
+            if (window.location.search.indexOf('/suites/view/') > -1) {
+                $.each($('.form-group textarea'), function(index, element) {
+                    $(element).addClass('form-fields');
+                });
+            }
+			if ($('#custom_expected_display').find('.attachment-list-delete-inline').length === 0) {
+				let attachments_delete_lang = "This <strong>deletes selected instances of your attachments.</strong> The files will keep on being stored on your Library. Go to Attachments on Data Storage to delete permanently.";
+				let attachments_confirm_msg = attachments_delete_lang.replace(/'/g, "\\'");
+				let html_section = `<div contenteditable="false" class="inlineAttachmentListRemove attachment-list-delete-inline" style="display: none;" href="javascript:void(0)" onclick="App.Attachments.entityRemoveAttachmentsDialog('${attachments_confirm_msg}', '443', 'case', '#custom_expected_attachments_wrapper', ''); $('#custom_expected_display .inlineAttachmentListRemove').hide(); return false;"><div class="attachment-list-delete-icon"></div><span>Delete</span></div><span contenteditable="false" class="inline-attachment-list-whitespace"></span>`;
+				$('#custom_expected_display .attachment-block:last-child').after(html_section);
+			}
+        }
+    );
+</script>					<div class="form-description form-description-full">
+             <!-- Changing the $text_format_type to $labeltext_setting -->
+			The expected result after executing the test case.			</div>
+			</div>
+	
+											<input type="hidden" name="custom_testrail_bdd_scenario" value="" id="custom_testrail_bdd_scenario" class="custom" field_type_id="13">											<input type="hidden" name="custom_steps_separated" value="" id="custom_steps_separated" class="custom" field_type_id="10">											<input type="hidden" name="custom_mission" value="" id="custom_mission" class="custom" field_type_id="3">											<input type="hidden" name="custom_goals" value="" id="custom_goals" class="custom" field_type_id="3">								<input type="hidden" name="dataset_keys" id="dataset_keys" value="[]">
+<input type="hidden" name="is_enterprise" id="is_enterprise" value="1">
+<script type="text/javascript">
+$(document).ready(function()
+{
+	$('#template_id').on(
+        'change',
+		function()
+		{
+			var template_id = $(this).val();
+			App.Cases.reloadForm(256, template_id);
+		}
+	);
+
+	App.applyTextAreaResizer(); // For textareas and steps
+	$(".custom.custom-string").each(function(index, item) {
+		$(item).inputautocomplete();
+	});
+    const titleObj = $('#title');
+	titleObj.on('input keydown paste blur', function () {
+		App.Cases.validateTitleInput();
+	});
+
+	$(document).on('focusin', function () {
+		setTimeout(App.Cases.validateTitleInput(), 0);
+	});
+    
+    App.Labels.Control.init();
+});
+</script>
+</div>
+
+<div class="button-group">
+	<button id="accept" type="submit" class="button button-left button-positive button-ok">
+		Add Test Case	</button><button id="acceptDisabled" disabled="disabled" style="display: none;" class="button button-left button-positive button-ok">
+		Add Test Case	</button>
+	<div class="icon-progress-large" title="Loading..." style="display:none"></div>
+
+            <button id="accept_and_next" type="submit" data-disabled="" name="save_and_next" value="1" class="button button-left button-positive button-ok">
+            Add &amp; Next        </button>
+		<button id="accept_and_next_disabled" disabled="disabled" style="display: none;" class="button button-left button-positive button-ok">
+            Add &amp; Next        </button>
+    	<a href="index.php?/suites/view/256" class="button button-left button-negative button-cancel leave case-form-cancel" data-testid="addEditCaseCancelButton">
+		Cancel	</a>
+	<input type="hidden" name="button_clicked" id="button_clicked" value="">
+</div>
+
+</form>
+<div class="dialog" id="importDialog">
+<div class="dialog-title">Retry</div>
+    <div class="dialog-body">
+        This operation could not be completed now. Please click "Retry" to try again now or click "Cancel" to try after some time.    </div>
+    <div class="button-group dialog-buttons-highlighted">
+        <button class="button button-left button-positive button-add dialog-action-default" id="importSubmit" type="submit">
+            Retry Now        </button>
+        <a class="button button-left button-negative button-cancel dialog-action-close" id="cancel-button">
+            Cancel        </a>
+    </div>
+</div>
+
+	
+		<div id="qpane-splitter" class="column splitter qpane-splitter" style="display: none;">
+	</div>
+			<div id="qpane" class="column qpane " style="width: 600px; display: none; top: 48px;">
+		<div id="qpane-empty" class="qpane-empty hidden">
+			<div class="qpane-empty-header">
+				No test case selected.			</div>
+			<div class="qpane-empty-body">
+				You can select a different group or change the filters.			</div>
+		</div>
+		<div id="qpane-inner">
+			<div id="qpaneSticky">
+				<div id="qpane-content" data-testid="runFastTrackContent">
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="dialog" id="importSharedStepsDialog" data-testid="importSharedStepsDialog">
+	<div class="dialog-title">Import shared steps</div>
+	<div class="dialogFormDefault">
+		<div class="dialog-body">
+			<div class="form-group">
+				<label class="brand-sub-title">Browse and select Shared Steps</label>
+			</div>
+			<div class="form-group">
+        <select class="form-control form-control-full form-select searchable" name="selectSharedStepsSet" id="selectSharedStepsSet" data-placeholder="Select an Option" onchange="setPreviewVisibility();" data-no_results_text="No results match" style="display: none;">
+          				</select><div class="chosen-container chosen-container-single chosen-container-single-nosearch" title="" id="selectSharedStepsSet_chosen" style="width: 0px;"><a class="chosen-single chosen-default" data-testid="historyCompareToButton">
+  <span>Select an Option</span>
+  <div><b></b></div>
+</a>
+<div class="chosen-drop" data-testid="compareVersionDropDwonButton">
+  <div class="chosen-search">
+    <input class="chosen-search-input" type="text" autocomplete="off" readonly="">
+  </div>
+  <ul class="chosen-results" data-testid="compareVersionOption"></ul>
+</div></div>
+      </div>
+      <div class="form-group">
+        Preview        <div class="preview-box">
+                  </div>
+			</div>
+		</div>
+		<div class="button-group dialog-buttons-highlighted">
+      <div class="insert_where">
+      Insert        <select class="form-select" name="selectInsertWhere" id="selectInsertWhere" data-testid="selectInsertWhere">
+          <option value="after">after</option>
+          <option value="before">before</option>
+        </select>
+        the step        <strong><span id="invokingStep"></span></strong>
+        <input type="hidden" id="invokingStepId">
+      </div>
+      <div class="import-shared-steps-buttons">
+        <a class="button button-left button-negative button-cancel dialog-action-close" tabindex="0">
+          Cancel        </a>
+        <button onclick="App.SharedSteps.closeImportSharedStepsDialogAndAdd('custom_steps_separated', '443');" type="submit" class="button button-left button-positive button-ok dialog-action-default" data-testid="dialogActionDefault">
+          Import steps        </button>
+      </div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+  function setPreviewVisibility() {
+    const selectedSharedStepsSet = $('#selectSharedStepsSet').val();
+    $('.shared_steps_preview').addClass('hidden');
+    $(`#shared_step_preview_${selectedSharedStepsSet}`).removeClass('hidden');
+  }
+
+  $(document).ready(
+      function () {
+        setPreviewVisibility();
+      }
+  );
+</script>
+
+<div class="dialog" id="createSharedStepsDialog" data-testid="createSharedStepsDialog">
+  <input type="hidden" id="create_shared_steps" name="create_shared_steps" class="custom steps fast_track">
+  <div class="dialog-title">Create Shared Steps</div>
+  <div class="dialogFormDefault">
+    <div class="dialog-body">
+      Share <strong>one</strong> or <strong>several</strong> steps to re-use them across your projects.      <br>
+      <br>
+      <div class="form-group">
+        <label class="brand-sub-title">Define a Name for the Shared Steps Set</label>
+        <input class="form-control form-control-full" type="text" id="shared_steps_set_title" data-testid="sharedStepsSetTitle" name="shared_steps_set_title" maxlength="250" onkeyup="validateCreateSharedStepsSet();">
+      </div>
+      <div class="form-group">
+        <label class="brand-sub-title">Select Steps</label>
+        <div id="steps-selection">
+
+        </div>
+      </div>
+    </div>
+    <div class="button-group dialog-buttons-highlighted">
+      <div class="hint">Only consecutive steps can be declared as shared steps.</div>
+      <div class="import-shared-steps-buttons">
+        <a class="button button-left button-negative button-cancel dialog-action-close" tabindex="0">
+          Cancel        </a>
+        <button type="submit" class="button button-left button-positive button-ok dialog-action-default" onclick="createSharedStepsSet();" id="createSharedStepsSetButton" data-testid="createSharedStepsSetButton" disabled="" tabindex="0">
+          Create        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dialog" id="createSharedStepsConfirmationDialog">
+  <div class="dialog-title">Shared Steps Created</div>
+  <div class="dialogFormDefault">
+    <div class="dialog-body">
+    <strong id="title"></strong> created successfully!      <br>
+      <br>
+      You’ll find your new set of Shared Steps on the Shared Steps<br>Dashboard. Now, go back to editing your Test Case.    </div>
+    <div class="button-group dialog-buttons-highlighted">
+      <div class="import-shared-steps-buttons">
+        <button type="submit" class="button button-left button-positive button-ok dialog-action-default" onclick="App.Dialogs.close('#createSharedStepsConfirmationDialog');">
+          Back to Test Case editing        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function validateCreateSharedStepsSet() {
+    let valid = true;
+    const title = $('#createSharedStepsDialog #shared_steps_set_title').val().trim();
+
+    if (title.length === 0) {
+      valid = false;
+    } else {
+      const checked = $('#steps-selection input[type=checkbox]:checked').length;
+      if (checked === 0) {
+        valid = false;
+      } else {
+        let lastIndex = $('#steps-selection input[type=checkbox]:checked').first().attr('stepCheckboxIndex');
+        $('#steps-selection input[type=checkbox]:checked').each(function() {
+          if ($(this).attr('stepCheckboxIndex') - lastIndex > 1) {
+            valid = false;
+          } else {
+            lastIndex = $(this).attr('stepCheckboxIndex');
+          }
+        });
+      }
+    }
+
+    if (valid) {
+      $('#createSharedStepsDialog #createSharedStepsSetButton').prop('disabled', false);
+    } else {
+      $('#createSharedStepsDialog #createSharedStepsSetButton').prop('disabled', true);
+    }
+  }
+
+  function createSharedStepsSet()
+  {
+    App.SharedSteps.updateSteps('create_shared_steps', '#createSharedStepsDialog');
+    window.onbeforeunload = null;
+
+    const title = $('#createSharedStepsDialog #shared_steps_set_title').val();
+    const create_shared_steps = $('#createSharedStepsDialog #create_shared_steps').val();
+    App.SharedSteps.createSharedSteps(443, 'custom_steps_separated', title, create_shared_steps, function(data) {
+      App.Dialogs.close('#createSharedStepsDialog');
+      if (data.foundAttachmentIds) {
+        $.each(data.foundAttachmentIds, function(ix, v)
+        {
+          App.Attachments._removeId(v.id);
+          $('a[href$="/attachments/get/'+ v.id +'"]').remove();
+          $('#attachment-' + v.id).remove();
+          if ($('#entityAttachmentList div').length === 0) {
+            $('#noEntityAttachments').show();
+          }
+        });
+      }
+      $('#createSharedStepsConfirmationDialog #title').html(
+        document.createTextNode(title)
+      );
+      App.Dialogs.open(
+        {
+          selector: '#createSharedStepsConfirmationDialog'
+        });
+
+      App.Ajax.call({
+        target: '/cases/ajax_render_steps_set',
+
+        arguments: {
+          index: 0,
+          project_id: 443,
+          field_name: 'custom_steps_separated',
+          shared_steps_set_id: data.sharedStepsSetId,
+          shared_steps_set_name: title,
+        },
+
+        success: function success(html) {
+          const step = $(html);
+          const steps = $('#custom_steps_separated_table');
+          const invokingStepId = $('#steps-selection input[type=checkbox]:checked').first().attr('stepId');
+          const prev = steps.find('tr.' + invokingStepId);
+          step.insertBefore(prev);
+          $('#steps-selection input[type=checkbox]:checked').each(function(){
+            steps.find('tr.' + $(this).attr('stepId')).remove();
+          });
+          App.Cases.indexSteps('custom_steps_separated');
+          App.Cases.changeSteps('custom_steps_separated');
+          $('#accept').prop('disabled', false);
+        },
+
+        error: function error(data) {
+          App.Ajax.handleError(data);
+        }
+      });
+    });
+  }
+</script>
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{		
+		var inputs = $('form :input');
+		inputs.on('change.confirm_leave', function() 
+		{
+			window.onbeforeunload = function() {
+				return 'You have changed one or more fields in this form. Are you sure you want to navigate away from this page? You would lose all changes you have made.';
+			};
+
+			inputs.off('change.confirm_leave');
+		});
+
+		$('#form').on('submit.confirm_leave', function()
+		{
+			window.onbeforeunload = null;
+		});
+
+		$('a.leave').on('click.confirm_leave', function()
+		{
+			window.onbeforeunload = null;
+		});
+	}
+);
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#accept_and_next').on('click', function() {
+        $('#button_clicked').val($(this).attr('id'));
+    });
+
+	$('#form').on('submit', function(e) {
+		e.preventDefault();
+		$('.icon-progress-large').show();
+		let $this = $(this);
+		let submit = function() {
+            $('#form').off('submit');
+            $('#form').trigger('submit');
+        };
+
+    	App.Ajax.call({
+    		target: '/cases/lock_suites',
+    		arguments: {
+        		suite_id : 256    		},
+
+    		success: function success(html) {
+        		$('.icon-progress-large').hide();
+
+        		if (html.suites_locked === 1) {
+            		App.Dialogs.open({
+            			selector: '#importDialog'
+            		});
+        		} else {
+            		            			$('#form').off('submit');
+            			$('#form').trigger('submit');
+            		        		}
+       		},
+
+    		error: function error(data) {
+        		App.Ajax.handleError(data);
+        	}
+		});
+    });
+
+	$('#importSubmit').on('click', function(){
+    	App.Dialogs.close('#importDialog');
+    	$('#form').trigger('submit');
+    })
+
+	App.Cases.savedSharedSteps = [];
+
+	$('#title').on('change', function(){$('#filter_changed').val(1);});
+	$('#section_id').on('change', function(){$('#filter_changed').val(1);});
+	$('#template_id').on('change', function(){$('#filter_changed').val(1);});
+	$('#type_id').on('change', function(){$('#filter_changed').val(1);});
+	$('#estimate').on('change', function(){$('#filter_changed').val(1);});
+	$('#refs').on('change', function(){$('#filter_changed').val(1);});
+	$('#custom_automation_type').on('change', function(){$('#filter_changed').val(1);});
+
+	$('#form').on(
+		'submit',
+		function() {
+			$('#js_test').val(1);
+		}
+	);
+
+	App.DirtyChecker.init();
+	App.Hotkeys.isForm(true);
+	App.Hotkeys.registerModifier(
+		's',
+		function(){
+			if (!$('#accept').is(':disabled')) {
+				$('#form').trigger('submit');
+			}
+		}
+	);
+
+	App.Attachments.initEditorAttachments(App.Cases.attachmentsCode);
+	$('#milestone_id, #parent_id').parent().removeClass('dropdown-size');
+});
+</script>
+
+<script type="text/javascript">
+    $(function() {
+        $(':input').on('keyup', function(e) {
+            $.each($('.chosen-container-single'), function (index, element) {
+                $(element).removeClass('chosen-container-active');
+            });
+        });
+    });
+</script>
+
+<!-- Since content was closed in middle.php and now it is
+moved to header.php so content blocks are closed here -->
+</div>
+</div>
+
+	
+		<div id="qpane-splitter" class="column splitter qpane-splitter" style="display: none;">
+	</div>
+			<div id="qpane" class="column qpane " style="width: 600px; display: none; top: 48px;">
+		<div id="qpane-empty" class="qpane-empty hidden">
+			<div class="qpane-empty-header">
+				No test case selected.			</div>
+			<div class="qpane-empty-body">
+				You can select a different group or change the filters.			</div>
+		</div>
+		<div id="qpane-inner">
+			<div id="qpaneSticky">
+				<div id="qpane-content" data-testid="runFastTrackContent">
+				</div>
+			</div>
+		</div>
+	</div>
+
+    </div>
+
+</div>
+
+<script>
+    // Click event on the button to toggle the class
+    $(window).on("click", function () {
+        const searchBox = document.querySelector('#top_search_dialog');
+        if (searchBox && searchBox.classList.contains('hidden')) {
+            $("body").removeClass("modal-open");
+        } else if (searchBox) {
+            $("body").addClass("modal-open");
+        }
+    });
+
+    $(document).ready(function () {
+        var tooltip = $('#tooltip');
+        // Hide the tooltip on scroll
+        $(window).scroll(function () {
+            setTimeout(() => {
+                tooltip.hide();
+            }, 50);
+        });
+
+        $('.sidebar-content').scroll(function () {
+            setTimeout(() => {
+                tooltip.hide();
+            }, 50);
+        });
+
+        $('.projects_search').scroll(function () {
+            setTimeout(() => {
+                tooltip.hide();
+            }, 50);
+        });
+    });
+
+</script>
+
+<script type="text/javascript">
+    var Consts = {};
+    Consts.ajaxBaseUrl = 'index.php?';
+        Consts.ajaxErrorMessage = 'An error occurred during the last operation or your installation is currently in maintenance mode. Please try again or refresh the current page.';
+    Consts.resourceBaseUrl = 'https://static.testrail.io/9.3.0.1080/';
+        Consts.ajaxCsrf = '9/mCTZQs3Cj1AgGzWi9u';
+    Consts.ajaxVersion = '9.3.0.1080';
+    Consts.dialogTitleError = 'Error';
+    Consts.statusFailed = 5;
+    Consts.statusRetest = 4;
+    Consts.statusBlocked = 2;
+    Consts.statusPassed = 1;
+    Consts.statusUntested = 3;
+    Consts.statusDefault = 1;
+	Consts.minWidth = 700;
+	Consts.minWidthOffset = 300;
+	Consts.minWidthVariable = 50;
+    Consts.hidePendoFromPrint = 0;
+    Consts.attachmentPatternWithoutContentEditable = /^<([a-zA-Z0-9]+)[^>]*contenteditable\s*=\s*"false"[^>]*>/;
+
+    var emojiPattern = "\/(?:[\\u231A-\\u231B\\u23E9-\\u23EC\\u23F0\\u23F3\\u25AA-\\u25AB\\u25FB-\\u25FE\\u2600-\\u26FF\\u2700-\\u27BF\\u2934-\\u2935\\u2B05-\\u2B07\\u2B1B-\\u2B1C\\u2B50\\u2B55\\u3030\\u303D\\u3297\\u3299\\uD83C[\\uDC00-\\uDFFF]|\\uD83D[\\uDC00-\\uDFFF]|\\uD83E[\\uDD00-\\uDFFF]|\\uD83F[\\uDC00-\\uDFFF])(?:\\uFE0F|\\u200D[\\u231A-\\u26FF\\u2700-\\u27BF\\uD83C-\\uD83E]+)*\/u";
+    emojiPattern = emojiPattern.replace(/\\x\{/g, '\\u{');
+    var patternBody = emojiPattern.slice(1, emojiPattern.lastIndexOf('/'));
+    var patternFlags = emojiPattern.slice(emojiPattern.lastIndexOf('/') + 1);
+    Consts.emojiPattern = new RegExp(patternBody, patternFlags);
+    var currencyList = [36,8364,163,165,8366,3647,8356,65509,65020,164,402,8361,8362,8363,162];
+    Consts.currencyList =currencyList;
+</script>
+
+
+<div class="dialog" id="messageDialog" style="width: 350px; word-wrap: break-word" data-testid="deleteAttachmentMessageDialog">
+	<div class="dialog-title"></div>
+	<div class="dialog-body dialog-message-body">
+		<p style="margin: 0" class="dialog-message" data-testid="deleteAttachmentDialogMessage"></p>
+	</div>
+	<div class="button-group dialog-buttons-highlighted">
+		<a class="button button-ok button-left button-positive dialog-action-default" tabindex="0">
+			OK		</a>
+	</div>
+</div><div class="dialog" id="confirmDialog" data-testid="addEditCaseConfirmDialog" style="width: 350px">
+	<div class="dialog-title">Confirmation</div>
+	<div class="dialog-body">
+		<p style="margin: 0" class="dialog-message"></p>
+	</div>
+	<div class="button-group dialog-buttons-highlighted">
+		<a class="button button-ok button-left button-positive dialog-action-default" tabindex="0" data-testid="editNameDialogOkButton">
+			Yes		</a>
+		<a class="button button-cancel button-left button-negative dialog-action-close" tabindex="0">
+			No		</a>		
+	</div>
+</div>
+
+<div id="confirmDialogOkCancel" class="dialog">
+	<div class="dialog-title">Confirmation</div>
+	<div class="dialog-body"><p class="dialog-message"></p></div>
+	<div class="button-group dialog-buttons-highlighted">
+		<a class="button button-ok button-left button-positive dialog-action-default">
+			OK		</a>
+		<a class="button button-cancel button-left button-negative dialog-action-close">
+			Cancel		</a>
+	</div>
+</div>
+<div id="tooltip" class="tooltip">
+	<div class="tooltip-pointer-up"></div>
+	<div class="tooltip-pointer-down"></div>
+	<div class="tooltip-pointer-right"></div>
+	<div class="tooltip-header"></div>
+	<p style="margin: 0"></p>
+</div><div class="dialog" id="deleteDialog" data-testid="caseFieldsTabDeleteDialog" style="width: 448px">
+	<div class="dialog-title">Confirmation</div>
+	<div class="dialog-body">
+		<p class="top bottom dialog-message"></p>
+		<p class="dialog-extra text-delete"></p>
+		<div class="message message-delete bottom delete-confirm-container" style="margin-top: 12px; line-height: 1">
+			<div class="checkbox" data-testid="caseFieldsTabDeleteDialogCheckbox">
+				<label>
+					<span class="dialog-confirm"></span>
+					<span class="dialog-confirm-busy"><div class="icon-progress-inline"></div></span>
+					<input type="checkbox" value="1" name="deleteCheckbox" data-testid="deleteCheckBoxTestId">
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="button-group dialog-buttons-highlighted">
+		<a class="button button-ok button-ok-disabled button-left button-positive button-disabled dialog-action-default" tabindex="0" data-testid="caseFieldsTabDeleteDialogButtonOk">
+			OK		</a>
+		<a class="button button-left button-positive button-disabled button-hidden button-no-margin-right dialog-action-secondary" data-testid="deleteCaseDialogActionSecondary">
+		</a>
+		<a class="button button-cancel button-left button-negative dialog-action-close" tabindex="0">
+			Cancel		</a>
+	</div>
+</div>
+<script>
+	$(document).ready(function() {
+		App.Controls.triggerClickOnEnter('#deleteDialog .dialog-action-close', true);
+		App.Controls.triggerClickOnEnter('.dialog-action-default');
+	});
+</script><div class="dialog" id="dpaDialog" style="max-width: 725px">
+    <div class="dialog-title">Confirmation</div>
+    <div class="dialog-body">
+        <p class="top bottom dialog-message"></p>
+        <p class="dialog-extra text-delete"></p>
+
+        <form action="index.php?/admin/users/accept_data_processing_agreement" id="dpa_form" method="post">        <input type="hidden" name="_token" value="9/mCTZQs3Cj1AgGzWi9u">
+        <div class="form-group">
+            <label for="full_name">Please enter your full name:<span class="form-required">*</span></label>
+            <input class="form-control " type="text" name="full_name" id="full_name" maxlength="250" value="">
+        </div>
+
+        </form>
+        <div class="message message-delete bottom delete-confirm-container" style="margin-top: 12px; line-height: 1; padding-bottom: 50px">
+            <div class="checkbox">
+                <label>
+                    <span class="dialog-confirm"></span>
+                    <input type="checkbox" value="1" name="deleteCheckbox" data-testid="deleteCheckBoxTestId">
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="button-group dialog-buttons-highlighted">
+        <a class="button button-ok button-ok-disabled button-left button-positive button-disabled dialog-action-default">
+            Submit        </a>
+        <a class="button button-cancel button-left button-negative dialog-action-close">
+            Cancel        </a>
+    </div>
+</div>
+<div class="dialog" id="trEnterpriseDialog" style="width: 350px; word-wrap: break-word">
+    <div class="dialog-title"></div>
+    <form action="index.php?/mysettings/tr_enterprise_banner_setting" id="tr_enterprise_form" method="post">    <input type="hidden" name="_token" value="9/mCTZQs3Cj1AgGzWi9u">    <div class="dialog-body">
+        <p style="margin: 0" class="dialog-message"></p>
+        <div class="form-group">
+            <div class="radio">
+                <label>
+                    <input type="radio" class="radio" name="tr_enterprise_banner_display" value="0" checked="">
+                    Remove for this Session                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" class="radio" name="tr_enterprise_banner_display" value="1">
+                    Remove forever                </label>
+            </div>
+        </div>
+    </div>
+    <div class="button-group dialog-buttons-highlighted">
+        <input type="submit" value="Submit" class="button button-ok button-left button-positive dialog-action-default">
+        <a class="button button-cancel button-left button-negative dialog-action-close">
+            Cancel        </a>
+    </div>
+    </form></div>
+
+<div class="dialog" id="deleteEntityAttachmentDialog" data-testid="deleteEntityAttachmentDialog" style="width: 425px">
+	<div class="dialog-title">Confirmation</div>
+	<div class="dialog-body">
+		<p class="top bottom dialog-message" data-testid="deleteSelectedAttachment"></p>
+		<p class="dialog-extra text-delete"></p>
+		<div class="message message-delete bottom delete-confirm-container" style="margin-top: 12px; line-height: 1">
+			<div class="checkbox">
+				<label>
+					<span class="dialog-confirm">Don’t show me this again</span>
+					<input id="deleteDontShowAgain" type="checkbox" value="1" name="deleteCheckbox" data-testid="deleteCheckBoxTestId">
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="button-group dialog-buttons-highlighted">
+		<a class="button button-ok button-left button-positive dialog-action-default delete-entity-attachment-button-submit" data-testid="deleteEntityAttachmentButtonSubmit">
+			Delete		</a>
+		<a class="button button-cancel button-left button-negative dialog-action-close">
+			Cancel		</a>
+	</div>
+</div>
+
+<script>
+	$(function () {
+		$(document).on('click', '.dialog-buttons-highlighted .delete-entity-attachment-button-submit', function(evt)
+		{
+			App.Attachments.dontShowEntityDeleteDialog = $('#deleteDontShowAgain').prop('checked');
+			App.Ajax.call({
+                target: '/mysettings/ajax_delete_entity_attachment_setting',
+
+                arguments: {
+                    dont_show: $('#deleteDontShowAgain').prop('checked')
+                },
+
+                error: function error(data) {
+                    App.Ajax.handleError(data);
+                }
+            });
+		});
+	});
+</script>
+<div class="dialog" id="completeDeleteEntityAttachmentDialog" data-testid="completeDeleteEntityAttachmentDialog" style="width: 425px">
+	<div class="dialog-title">Confirmation</div>
+	<div class="dialog-body">
+		<p class="top bottom dialog-message" data-testid="deleteSelectedAttachment"></p>
+        <br>
+        <div class="dialog-filenames">
+            <ul class="dialog-filenames-list"></ul>
+        </div>
+	</div>
+	<div class="button-group dialog-buttons-highlighted">
+		<a class="button button-ok button-left button-positive dialog-action-default delete-entity-attachment-button-submit" data-testid="deleteEntityAttachmentButtonSubmit">
+			Delete		</a>
+		<a class="button button-cancel button-left button-negative dialog-action-close">
+			Cancel		</a>
+	</div>
+</div>
+
+    
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#bannerLink').bubble({
+            bubble: '#enterpriseBubble',
+            inContainer: true
+        });
+
+        $('#content').on('change', 'input:checkbox[name="entity_run"]', function() {
+            delselectAll(this, 'run')
+        });
+
+        $('#content').on('change', 'input:checkbox[name="entity_milestones"]', function() {
+            delselectAll(this, 'milestones')
+        });
+    });
+
+    function delselectAll (type, entity) {
+        let parent = $(type).data('option');
+        if (parent === undefined) {
+            $('input:checkbox[name=select_all]').each(function() {
+                let select = $(this).parent().closest('div').attr('id');
+
+                if ($('#' + select).find(type).length > 0) {
+                    parent = select;
+                }
+            });
+        }
+        let selector = '#' + parent;
+        $(selector)
+            .find('input:checkbox[name="select_all"]')
+            .prop(
+                'checked',
+                $(selector + ' input:checked[name="entity_'+ entity +'"]').length ===
+                $(selector + ' input:checkbox[name="entity_'+ entity +'"]').length
+            );
+        $('#delete-' + entity).css(
+            'display',
+            $('input:checked[name="entity_'+ entity +'"]').length > 0
+                ? 'block'
+                : 'none'
+        );
+    }
+
+    function SelectAllEntity (type) {
+        let parent = $(type).parent().closest('div').attr('id');
+        let checked_status = $(type).is(':checked');
+        $('#' + parent).find('input[type=checkbox]')
+            .attr('data-option', parent)
+            .not(':disabled')
+            .prop(
+                'checked',
+                checked_status
+            );
+        let selector = $('#' + parent).find('input:checkbox[name="entity_milestones"]').length
+            ? 'milestones'
+            : 'run';
+        $('#delete-' + selector).css(
+            'display',
+            checked_status && $('input:checked[name="entity_'+ selector +'"]').length
+                ? 'block'
+                : 'none'
+            );
+    }
+</script>
+
+
+												
+
+	
+<div id="projectGoalHelp" class="tooltip tooltip-goal">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">1/6</span>
+		Create a Project	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">Welcome! Start by creating your first project. Projects in TestRail usually represent a product or software project and serve as organizational unit for cases, results and milestones. You can create as many projects as you like.</p>
+		<div class="tooltip-goal-image goal-project-help"></div>
+	</div>
+</div><div id="casesGoalHelp" class="tooltip tooltip-goal">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">2/6</span>
+		Add Test Cases	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">Test cases represent a certain feature, behavior or functionality you wish to test. They often contain a description, a list of steps and expected results. Cases are organized in sections to make it easy to group related cases together.</p>
+		<div class="tooltip-goal-image goal-cases-help"></div>
+	</div>
+</div><div id="runGoalHelp" class="tooltip tooltip-goal">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">3/6</span>
+		Start a Test Run	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">To execute tests and enter results for your cases, you start a test run. You can have multiple test runs over time and reuse your test cases across runs. A test run has a status and you can easily follow its progress and test activity.</p>
+		<div class="tooltip-goal-image goal-run-help"></div>
+	</div>
+</div><div id="resultsGoalHelp" class="tooltip tooltip-goal">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">4/6</span>
+		Add Test Results	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">Once you've added a test run, you can start testing and record results. A result has a status such as <em>Passed</em> or <em>Failed</em> and the statuses are signaled by different colors. Adding results contributes to the overall status and progress of the test run.</p>
+		<div class="tooltip-goal-image goal-results-help"></div>
+	</div>
+</div>
+<div id="usersGoalHelp" class="tooltip tooltip-goal">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">5/6</span>
+		Invite Team Members	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">TestRail is especially useful when used with a team. Invite other team members and build your test case repository, assign test runs and record results together. Easily track the workload and progress from the Todo tab for your entire team.</p>
+		<div class="tooltip-goal-image goal-users-help"></div>
+				<div class="checkbox" style="margin-top: 1em">
+			<label>
+				I don't plan to invite other users for now				<input type="checkbox" id="usersGoalToggle">
+			</label>
+		</div>
+			</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		$('#usersGoalToggle').off('click').on(
+			'click',
+			function()
+			{
+				App.Users.setGoal(5, this.checked);
+			}
+		);
+	}
+);
+</script>
+
+<div id="integrationGoalHelp" class="tooltip tooltip-goal">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">6/6</span>
+		Set up Integration	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">Integrate TestRail with your existing tools such as issue or bug trackers (such as Jira), requirement management tools, wiki software and many more. Collaborate with your dev team, run traceability reports and link cases &amp; results to issues and defects.</p>
+		<div class="tooltip-goal-image goal-integration-help"></div>
+				<div class="checkbox" style="margin-top: 1em">
+			<label>
+				I don't plan to integrate TestRail with other tools for now				<input type="checkbox" id="integrationGoalToggle">
+			</label>
+		</div>
+			</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		$('#integrationGoalToggle').off('click').on(
+			'click',
+			function()
+			{
+				App.Users.setGoal(6, this.checked);
+			}
+		);
+	}
+);
+</script>
+
+<div id="goals" class="goals">
+	<div id="goals-banner" class="goals-banner ">
+		<span id="goals-cancel" class="goals-cancel hidden">
+			<a class="link-noline nolink" href="javascript:void(0)" onclick="this.blur(); App.Users.hideGoals(false); return false;"><div class="icon-cancel"></div></a>
+		</span>
+		<div class="goals-banner-inner">
+			<ol class="goals-progress">
+																			<li class="goals-progress-step goals-progress-step-done">
+						<span class="goals-progress-title">Create a project</span>
+																									<div class="goals-progress-marker link-tooltip goal-project-checked" tooltip-id="#projectGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step goals-progress-step-done">
+						<span class="goals-progress-title">Add cases</span>
+																									<div class="goals-progress-marker link-tooltip goal-cases-checked" tooltip-id="#casesGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step ">
+						<span class="goals-progress-title">Start a run</span>
+																									<div class="goals-progress-marker link-tooltip goal-run" tooltip-id="#runGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step ">
+						<span class="goals-progress-title">Add results</span>
+																									<div class="goals-progress-marker link-tooltip goal-results" tooltip-id="#resultsGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step ">
+						<span class="goals-progress-title">Invite users</span>
+																									<div class="goals-progress-marker link-tooltip goal-users" tooltip-id="#usersGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step ">
+						<span class="goals-progress-title">Set up integration</span>
+																									<div class="goals-progress-marker link-tooltip goal-integration" tooltip-id="#integrationGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+							</ol>
+		</div>
+		<div id="goals-start" class="goals-start hidden">
+			<div class="goal-start"></div>
+		</div>
+		<div id="goals-finish" class="goals-finish hidden">
+			<div class="goal-finish"></div>
+		</div>
+		<div id="goals-next" class="goals-next hidden">
+			<img src="https://static.testrail.io/9.3.0.1080/images/layout/blank.gif" usemap="#goalsNextMap" class="goal-next">
+			<map name="goalsNextMap">
+				<area shape="rect" coords="691,13,726,48" href="javascript:void(0)" onclick="this.blur(); App.Users.hideGoalsNext(); return false;">
+				<area shape="rect" coords="64,305,254,339" target="_blank" href="https://support.testrail.com/">
+				<area shape="rect" coords="280,305,470,339" target="_blank" href="http://blog.gurock.com/">
+				<area shape="rect" coords="496,305,686,339" target="_blank" href="http://www.gurock.com/testrail/videos/introduction-projects/">
+			</map>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+				var timer = null;
+		$('#goals').off('mouseenter').on('mouseenter', function()
+		{
+			timer = setTimeout(
+				function()
+				{
+					$('#goals-cancel').fadeTo(250, 1);
+				},
+				2500
+			);
+		});
+
+		$('#goals').off('mouseleave').on('mouseleave', function()
+		{
+			$('#goals-cancel').hide();
+			if (timer)
+			{
+				clearTimeout(timer);
+				timer = null;
+			}
+		});
+			}
+);
+</script>
+<div class="dialog dialog_attachment" id="attachmentInfoDialog" data-testid="attachmentInfoDialog" style="width: 900px; height: 531px;"></div>
+<div id="newAttachmentTemplate" style="display: none;">
+	<div style="width: 150px; height: 150px; {{attachment_thumbnail}}" class="attachment-block attachment-{{attachment_icon}} {{attachment_selected_class}} lazy" tabindex="0" data-testid="attachmentsTab" id="libraryAttachment-{{attachment_id}}" onclick="App.Attachments.showInfoDialog('{{attachment_id}}', false);" title="{{attachment_name}}">
+	<div class="attachment-icon" style="{{attachment_icon_style}}"></div>
+	<div class="attachment-name">
+		{{attachment_truncated_name}}
+	</div>
+	<img {{attachment_src_tag}}="{{attachment_imgurl}}" {{attachment_onerror_tag}}="{{attachment_img_onerror}}" class="hidden-image">
+	<div tabindex="0" class="attachment-selection {{attachment_selected_class}}" data-testid="attachmentsTabAttachmentSelection" onclick="App.Attachments.toggleSelection('{{attachment_id}}', event, {{project_id}});"></div>
+</div>
+
+<script>
+	$(document).ready(function() {
+		const attachmentId = 'libraryAttachment-{{attachment_id}}';
+		const selector = '#' + CSS.escape(attachmentId);
+		
+		$(selector).on('keydown', function(e) {
+			if (e.key === "Enter" || e.keyCode === 13) {
+				$(this).click();
+			}
+		});
+		
+		$(selector + ' .attachment-selection').on('keydown', function(e) {
+			if (e.key === "Enter") {
+				e.preventDefault();
+				e.stopImmediatePropagation();
+				$(this).click();
+			}
+		});
+	});
+</script></div>
+<div id="libraryAttachmentsAddItemTemplate" style="display: none;">
+	<div id="{{element_id}}" class="attachment-library-add" tabindex="0">
+	<div class="attachment-library-add-icon"></div>
+</div>
+<script>
+	$('.attachment-library-add').on('keydown', function(e) {
+		if (e.key === "Enter" || e.keyCode === 13) {
+			$(this).click();
+		}
+	});
+</script>
+</div>
+
+												
+
+	
+<div id="projectGoalHelp" class="tooltip tooltip-goal">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">1/6</span>
+		Create a Project	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">Welcome! Start by creating your first project. Projects in TestRail usually represent a product or software project and serve as organizational unit for cases, results and milestones. You can create as many projects as you like.</p>
+		<div class="tooltip-goal-image goal-project-help"></div>
+	</div>
+</div><div id="casesGoalHelp" class="tooltip tooltip-goal">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">2/6</span>
+		Add Test Cases	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">Test cases represent a certain feature, behavior or functionality you wish to test. They often contain a description, a list of steps and expected results. Cases are organized in sections to make it easy to group related cases together.</p>
+		<div class="tooltip-goal-image goal-cases-help"></div>
+	</div>
+</div><div id="runGoalHelp" class="tooltip tooltip-goal">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">3/6</span>
+		Start a Test Run	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">To execute tests and enter results for your cases, you start a test run. You can have multiple test runs over time and reuse your test cases across runs. A test run has a status and you can easily follow its progress and test activity.</p>
+		<div class="tooltip-goal-image goal-run-help"></div>
+	</div>
+</div><div id="resultsGoalHelp" class="tooltip tooltip-goal">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">4/6</span>
+		Add Test Results	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">Once you've added a test run, you can start testing and record results. A result has a status such as <em>Passed</em> or <em>Failed</em> and the statuses are signaled by different colors. Adding results contributes to the overall status and progress of the test run.</p>
+		<div class="tooltip-goal-image goal-results-help"></div>
+	</div>
+</div>
+<div id="usersGoalHelp" class="tooltip tooltip-goal">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">5/6</span>
+		Invite Team Members	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">TestRail is especially useful when used with a team. Invite other team members and build your test case repository, assign test runs and record results together. Easily track the workload and progress from the Todo tab for your entire team.</p>
+		<div class="tooltip-goal-image goal-users-help"></div>
+				<div class="checkbox" style="margin-top: 1em">
+			<label>
+				I don't plan to invite other users for now				<input type="checkbox" id="usersGoalToggle">
+			</label>
+		</div>
+			</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		$('#usersGoalToggle').off('click').on(
+			'click',
+			function()
+			{
+				App.Users.setGoal(5, this.checked);
+			}
+		);
+	}
+);
+</script>
+
+<div id="integrationGoalHelp" class="tooltip tooltip-goal">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">6/6</span>
+		Set up Integration	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">Integrate TestRail with your existing tools such as issue or bug trackers (such as Jira), requirement management tools, wiki software and many more. Collaborate with your dev team, run traceability reports and link cases &amp; results to issues and defects.</p>
+		<div class="tooltip-goal-image goal-integration-help"></div>
+				<div class="checkbox" style="margin-top: 1em">
+			<label>
+				I don't plan to integrate TestRail with other tools for now				<input type="checkbox" id="integrationGoalToggle">
+			</label>
+		</div>
+			</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		$('#integrationGoalToggle').off('click').on(
+			'click',
+			function()
+			{
+				App.Users.setGoal(6, this.checked);
+			}
+		);
+	}
+);
+</script>
+
+<div id="goals" class="goals">
+	<div id="goals-banner" class="goals-banner ">
+		<span id="goals-cancel" class="goals-cancel hidden">
+			<a class="link-noline nolink" href="javascript:void(0)" onclick="this.blur(); App.Users.hideGoals(false); return false;"><div class="icon-cancel"></div></a>
+		</span>
+		<div class="goals-banner-inner">
+			<ol class="goals-progress">
+																			<li class="goals-progress-step goals-progress-step-done">
+						<span class="goals-progress-title">Create a project</span>
+																									<div class="goals-progress-marker link-tooltip goal-project-checked" tooltip-id="#projectGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step goals-progress-step-done">
+						<span class="goals-progress-title">Add cases</span>
+																									<div class="goals-progress-marker link-tooltip goal-cases-checked" tooltip-id="#casesGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step ">
+						<span class="goals-progress-title">Start a run</span>
+																									<div class="goals-progress-marker link-tooltip goal-run" tooltip-id="#runGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step ">
+						<span class="goals-progress-title">Add results</span>
+																									<div class="goals-progress-marker link-tooltip goal-results" tooltip-id="#resultsGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step ">
+						<span class="goals-progress-title">Invite users</span>
+																									<div class="goals-progress-marker link-tooltip goal-users" tooltip-id="#usersGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step ">
+						<span class="goals-progress-title">Set up integration</span>
+																									<div class="goals-progress-marker link-tooltip goal-integration" tooltip-id="#integrationGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+							</ol>
+		</div>
+		<div id="goals-start" class="goals-start hidden">
+			<div class="goal-start"></div>
+		</div>
+		<div id="goals-finish" class="goals-finish hidden">
+			<div class="goal-finish"></div>
+		</div>
+		<div id="goals-next" class="goals-next hidden">
+			<img src="https://static.testrail.io/9.3.0.1080/images/layout/blank.gif" usemap="#goalsNextMap" class="goal-next">
+			<map name="goalsNextMap">
+				<area shape="rect" coords="691,13,726,48" href="javascript:void(0)" onclick="this.blur(); App.Users.hideGoalsNext(); return false;">
+				<area shape="rect" coords="64,305,254,339" target="_blank" href="https://support.testrail.com/">
+				<area shape="rect" coords="280,305,470,339" target="_blank" href="http://blog.gurock.com/">
+				<area shape="rect" coords="496,305,686,339" target="_blank" href="http://www.gurock.com/testrail/videos/introduction-projects/">
+			</map>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+				var timer = null;
+		$('#goals').off('mouseenter').on('mouseenter', function()
+		{
+			timer = setTimeout(
+				function()
+				{
+					$('#goals-cancel').fadeTo(250, 1);
+				},
+				2500
+			);
+		});
+
+		$('#goals').off('mouseleave').on('mouseleave', function()
+		{
+			$('#goals-cancel').hide();
+			if (timer)
+			{
+				clearTimeout(timer);
+				timer = null;
+			}
+		});
+			}
+);
+</script>
+
+
+<script>
+    var text_format_type = "" ;
+</script>
+            <script type="text/javascript" src="https://static.testrail.io/9.3.0.1080/js/bundle/common-deps-footer.js"></script>
+        <script type="text/javascript" src="https://static.testrail.io/9.3.0.1080/js/bundle/application-entrypoint.js"></script>
+        <script type="text/javascript" defer="" fetchpriority="low" src="https://static.testrail.io/9.3.0.1080/js/bundle/common-deps-header-deferred.js"></script>
+        <script type="text/javascript" src="https://static.testrail.io/9.3.0.1080/js/bundle/application.search.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+		App.Translations.add(
+		"timespans_hour_short",
+		"h"	);
+		App.Translations.add(
+		"timespans_minute_short",
+		"m"	);
+		App.Translations.add(
+		"timespans_second_short",
+		"s"	);
+		App.Translations.add(
+		"auth_confirm_not_match_password",
+		"Password doesn't match."	);
+		App.Translations.add(
+		"auth_password_good",
+		"Good"	);
+		App.Translations.add(
+		"auth_password_weak",
+		"Weak"	);
+	});
+</script>
+<script type="application/javascript">
+    if (!Consts.hidePendoFromPrint) {
+        (function(apiKey){ // <-- passed in at the bottom
+            (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+            v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
+                o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+                // Create a `<script>` tag linked to your application-specific Agent build from our CDN...
+                y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
+                z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);
+            })(window,document,'script','pendo');
+            pendo.initialize({
+                sanitizeUrl: function(url) {
+                    return url.replace('index.php?', 'index.php')
+                },
+                visitor: {
+                    id: '920120-1',
+                    is_admin: true,
+                    is_active: true,
+                    userLanguage: 'en'
+                },
+                account: {
+                    id: '920120',
+                    instanceLanguage: 'en'
+                }
+            });
+        })('1c20428c-1995-4c00-6e1c-daff12af9c00');
+    }
+</script>
+<script>
+  var currentProjectId = '443' || "0";
+    var scrollWidth = 0;
+    $(document).on('mousedown', '.field-editor', function (e)
+    {
+        var currentWidth = e.offsetX;
+        var key = "";
+        var selector ="#"+e.currentTarget.id
+        if (currentProjectId == "0")
+        {
+            var nProject = getURL();
+            key = nProject +"-"+selector+"-width";
+        }
+        else
+        {
+            key = currentProjectId +"-"+selector+"-width";
+        }
+
+        var editorWidth = JSON.parse(localStorage.getItem(key));
+        if(!editorWidth)
+        {
+            editorWidth = $(selector).width()-12;
+        }
+        scrollWidth = currentWidth+12-editorWidth;
+    });
+    $(function()
+    {
+        var Consts = {};
+        $('body').on('click', function(evt)
+        {
+            if($(evt.target).is('.field-editor') || $(evt.target).is('.testrail-editor') || $(evt.target).parents().hasClass('fr-box') || $(evt.target).parents().hasClass('frolaAttachmentpop') || $(evt.target).parents().hasClass('attachments-new-dialog')  || $(evt.target).parents().hasClass('attachments-library') || $(evt.target).is('attachments-library') || $(evt.target).hasClass('dz-hidden-input') || $(evt.target).hasClass('attachment-block') || $(evt.target).parents().hasClass('attachment-info-details') || $(evt.target).parents().hasClass('dialog') || $(evt.target).hasClass('blockOverlay'))
+            {
+             return
+            }
+        });
+        $("input").on('focus', function (){});
+
+        if(window.location.search.indexOf("?/auth/login") !=0)
+        {
+            Consts.formConfirmLeaveMessage = 'You have changed one or more fields in this form. Are you sure you want to navigate away from this page? You would lose all changes you have made.';
+        }
+
+        App.Sidebar.init();
+App.InputSymbolsCounter.init();
+
+        var crsf_token = '9/mCTZQs3Cj1AgGzWi9u';
+
+        /*
+        *dynamic_obj varibale
+        *
+        */
+
+        var dynamic_obj = {
+            project_id: '443',
+            text_drop: 'Drop files here to upload, or',
+            text_select:'Select Files',
+            library_title: 'Media Library',
+            library_add_new: 'Add New',
+            remove_title: 'Remove',
+            delete_title: 'Delete',
+            dialog_info: 'Maximum file size: 256 MB.',
+            add_attach: 'Attach',
+            cancel_title: 'Cancel',
+            isBDDAutocompleteEnabled: false        };
+
+        /*
+        * To display project text editor type
+        *text_format_type defined project wise textformat type
+        * seting_format_type global setting format type
+        */
+         text_format_type = 'plaintext';
+        var seting_format_type = 'plaintext';
+        if (seting_format_type != '' && text_format_type == '')
+        {
+            text_format_type = seting_format_type;
+        }
+        else if (text_format_type == '')
+        {
+            text_format_type = 'plaintext'
+        }
+        var currentProjectId = '443' || "0";
+
+        // $('.testrail-editor').each(function()
+        // {
+        //     var editorId = $(this).attr('id');
+        //     if (editorId != undefined)
+        //     {
+        //         if ($('#testrail_cont-' + editorId).length < 1)
+        //         {
+        //                 $('#'+editorId).wrap('<div class="testrail-container" id="testrail_cont-' + editorId + '"></div>');
+        //         }
+        //     }
+        // });
+        if (currentProjectId == "0")
+        {
+            var nProject = getURL();
+            $('.testrail-editor').each(function()
+            {
+                var editorId = $(this).attr('id');
+                if (editorId != undefined)
+                {
+                    getLocalStorgeData(nProject,"#"+editorId);
+                }
+            });
+
+        }
+        else
+        {
+            $('.testrail-editor').each(function()
+            {
+                var editorId = $(this).attr('id');
+                if (editorId != undefined)
+                {
+                    getLocalStorgeData(currentProjectId,"#"+editorId);
+                }
+            });
+        }
+
+        /*
+        * Based on the editor type editor will display
+        */
+
+        if(text_format_type =="plaintext")
+        {
+            $('.testrail-editor').each(function()
+            {
+                var editorId = $(this).attr('id');
+
+                $(document).on('focus keyup blur', '.testrail-editor', function()
+                {
+                    var editor_id = $(this).attr('id');
+                    var content = $(this).text();
+                    if ($(this).is('span')) {
+                        content = content.trim();
+                    }
+                    $("#" + editor_id + "_mark").val(content);
+                });
+            });
+
+            $(document).on('paste', 'span.testrail-editor#description[contenteditable]', function (e) {
+                    e.preventDefault();
+                    if (window.clipboardData) {
+                        content = window.clipboardData.getData('Text');        
+                        if (window.getSelection) {
+                            var selObj = window.getSelection();
+                            var selRange = selObj.getRangeAt(0);
+                            selRange.deleteContents();                
+                            selRange.insertNode(document.createTextNode(content));
+                        }
+                    } else if (e.originalEvent.clipboardData) {
+                        content = (e.originalEvent || e).clipboardData.getData('text/plain');
+                        document.execCommand('insertText', false, content);
+                    }        
+                });
+        }
+
+    });
+    /*
+    * rename tag to
+    * @param object $obj
+    * @param string new_tag
+    */
+    function renameTag($obj, new_tag)
+    {
+        var obj = $obj.get(0);
+        var tag = obj.tagName.toLowerCase();
+        var tag_start = new RegExp('^<' + tag);
+        var tag_end = new RegExp('<\\/' + tag + '>$');
+        var new_html = obj.outerHTML.replace(tag_start, "<" + new_tag).replace(tag_end, '</' + new_tag + '>');
+        $obj.replaceWith(new_html);
+    }
+
+    function getURL()
+    {
+        var currentProjectId = '443' || "0";
+
+        if (currentProjectId == "0")
+        {
+            var lhref = window.location.href;
+            lhrefSplit = lhref.split("/");
+            lEle=lhrefSplit[lhrefSplit.length - 1];
+            lEle1=lhrefSplit[lhrefSplit.length - 2];
+            lEle2=lhrefSplit[lhrefSplit.length - 3];
+            var newproject_id=lEle2+"_"+lEle1+"_"+lEle;
+            return  newproject_id;
+        }
+        else
+        {
+            return  currentProjectId;
+        }
+
+    }
+    function getLocalStorgeData(project_id,selector)
+    {
+        var key=project_id +"-"+selector;
+        var key1=project_id +"-"+selector+"-width";
+        let lData = JSON.parse(localStorage.getItem(key));
+        let lDataWid = JSON.parse(localStorage.getItem(key1));
+        if (lData !== null)
+        {
+            if($(selector).prev().hasClass('fr-box'))
+            {
+                $($(selector).prev().find('.fr-wrapper')[0]).height(lData-2);
+            }
+            else
+            {
+                $(selector).height(lData);
+            }
+
+        }
+        if (lDataWid !== null)
+        {
+            if($(selector).prev().hasClass('fr-box'))
+            {
+                $($(selector).prev().find('.fr-wrapper')[0]).width(lDataWid);
+                $($(selector).prev().find('.fr-toolbar')[0]).width(lDataWid);
+            }
+            else
+            {
+                $(selector).width(lDataWid);
+            }
+        }
+    }
+    function setLocalStorgeData (ht,lproject_id,selector,wt)
+    {
+        var key=lproject_id +"-"+selector;
+        var key1=lproject_id +"-"+selector +"-width";
+        var lData1= JSON.parse(localStorage.getItem(key));
+        var lDataWid= JSON.parse(localStorage.getItem(key1));
+        if (lData1 !== null &&  lData1 != 0)
+        {
+            // getLocalStorgeData(lproject_id,selector);
+            lData1 = ht;
+            localStorage.setItem(key, JSON.stringify(lData1));
+
+        }
+        else
+        {
+            var obj = ht;
+            if(ht == 0)
+            {
+                localStorage.setItem(key,$(selector).height());
+            }
+            else
+            {
+                localStorage.setItem(key, JSON.stringify(obj));
+            }
+
+        }
+        if (lDataWid !== null && lDataWid != 0)
+        {
+            // getLocalStorgeData(lproject_id,selector);
+            lDataWid = wt;
+            localStorage.setItem(key1, JSON.stringify(lDataWid));
+
+        }
+        else
+        {
+            var objWid = wt;
+            if(wt == 0)
+            {
+                localStorage.setItem(key1,$(selector).width());
+            }
+            else
+            {
+                localStorage.setItem(key1, JSON.stringify(objWid));
+            }
+        }
+    }
+
+    $(function()
+    {
+        activateResizeObserver();
+        $(window).on('resize', function(){
+        });
+    })
+
+    function activateResizeObserver()
+    {
+        // $('.testrail-container').each(function()
+        // {
+        //     var editorId = $(this).children('.testrail-editor').attr('id');
+        // });
+    }
+
+    $(document).ready(() => {
+        // $('.testrail-container').each(function()
+        // {
+        //     var editorId = $(this).children('.testrail-editor').attr('id');
+        //     var nProject = getURL();
+        //     if (editorId != undefined)
+        //     {
+        //         getLocalStorgeData(nProject,editorId);
+        //     }
+        // })
+    })
+
+    $(function() {
+        App.Sidebar.init();
+App.InputSymbolsCounter.init();
+        
+    });
+    window.defaultLanguage = "en";
+</script>
+
+
+<ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" unselectable="on" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-2" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" unselectable="on" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><ul id="ui-id-3" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" unselectable="on" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><input type="file" multiple="multiple" class="dz-hidden-input" accept=".bmp,.doc,.docx,.exe,.gif,.htm,.html,.jpeg,.jpg,.odp,.ods,.odt,.pdf,.png,.ppt,.pptx,.sil,.txt,.tif,.tiff,.xhtml,.xls,.xlsx,.xml,.zip" tabindex="-1" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><input type="file" multiple="multiple" class="dz-hidden-input" accept=".bmp,.doc,.docx,.exe,.gif,.htm,.html,.jpeg,.jpg,.odp,.ods,.odt,.pdf,.png,.ppt,.pptx,.sil,.txt,.tif,.tiff,.xhtml,.xls,.xlsx,.xml,.zip" tabindex="-1" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><input type="file" multiple="multiple" class="dz-hidden-input" accept=".bmp,.doc,.docx,.exe,.gif,.htm,.html,.jpeg,.jpg,.odp,.ods,.odt,.pdf,.png,.ppt,.pptx,.sil,.txt,.tif,.tiff,.xhtml,.xls,.xlsx,.xml,.zip" tabindex="-1" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><div id="jstree-marker" style="display: none;"></div></body></html>
