@@ -35,15 +35,15 @@ public class DashboardPage extends BasePage {
     return new AddProjectPage();
   }
 
-  @Step("Checking  the project is created")
+  @Step("Getting created project name")
   public String getCreatedProjectName(String projectName) {
-    log.info("Checking if the Project is created");
+    log.info("Getting created project name - {}", projectName);
     return $$(byText(projectName)).filter(Condition.visible).first().getText();
   }
 
   @Step("Opening  the project")
   public ProjectOverviewPage openProject(String projectName) {
-    log.info("Opening the Project");
+    log.info("Opening {} the Project", projectName);
     $$(byText(projectName)).filter(Condition.visible).first().click();
     return new ProjectOverviewPage();
   }

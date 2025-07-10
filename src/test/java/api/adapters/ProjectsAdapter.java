@@ -16,6 +16,9 @@ import utils.PropertyReader;
 
 public class ProjectsAdapter extends BaseAdapter {
 
+  String userName = System.getProperty("testrailUser", PropertyReader.getProperty("user")),
+      password = System.getProperty("testrailPassword", PropertyReader.getProperty("password"));
+
   private static final Gson gson = new Gson();
 
   public ProjectsAdapter() {
@@ -29,8 +32,8 @@ public class ProjectsAdapter extends BaseAdapter {
         .contentType(ContentType.JSON)
         .auth().preemptive()
         .basic(
-            System.getProperty("testrailUser", PropertyReader.getProperty("user")),
-            System.getProperty("testrailPassword", PropertyReader.getProperty("password"))
+            userName,
+            password
         )
         .body(jsonBody)
         .when()
@@ -48,8 +51,8 @@ public class ProjectsAdapter extends BaseAdapter {
         .contentType(ContentType.JSON)
         .auth().preemptive()
         .basic(
-            System.getProperty("testrailUser", PropertyReader.getProperty("user")),
-            System.getProperty("testrailPassword", PropertyReader.getProperty("password"))
+            userName,
+            password
         )
         .when()
         .get(BASE_API_URL + GET_PROJECTS_ENDPOINT)
@@ -65,8 +68,8 @@ public class ProjectsAdapter extends BaseAdapter {
         .contentType(ContentType.JSON)
         .auth().preemptive()
         .basic(
-            System.getProperty("testrailUser", PropertyReader.getProperty("user")),
-            System.getProperty("testrailPassword", PropertyReader.getProperty("password"))
+            userName,
+            password
         )
         .when()
         .get(BASE_API_URL + GET_PROJECT_ENDPOINT + projectId)
@@ -80,8 +83,8 @@ public class ProjectsAdapter extends BaseAdapter {
         .contentType(ContentType.JSON)
         .auth().preemptive()
         .basic(
-            System.getProperty("testrailUser", PropertyReader.getProperty("user")),
-            System.getProperty("testrailPassword", PropertyReader.getProperty("password"))
+            userName,
+            password
         )
         .when()
         .post(BASE_API_URL + DELETE_PROJECT_ENDPOINT + idOfProject)

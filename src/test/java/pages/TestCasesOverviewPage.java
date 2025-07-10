@@ -33,11 +33,4 @@ public class TestCasesOverviewPage extends BasePage {
     log.info("Check that test case {} is deleted", testCaseTitle);
     return !$x(String.format(TEST_CASE_TITLE_XPATH, testCaseTitle)).shouldNot(Condition.exist).exists();
   }
-
-  @Step("Click to test case title")
-  public TestCaseDetailsPage clickToTestCaseTitle(String testCaseTitle) {
-    log.info("Click to 'Delete' button for {} test case", testCaseTitle);
-    $x(String.format(TEST_CASE_TITLE_XPATH, testCaseTitle)).click();
-    return new TestCaseDetailsPage();
-  }
 }

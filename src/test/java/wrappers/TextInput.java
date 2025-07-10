@@ -16,4 +16,3 @@ public class TextInput {
     $x(String.format(textBoxLocator, label)).shouldBe(Condition.visible).sendKeys(someText);
   }
 }
-
