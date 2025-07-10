@@ -6,7 +6,7 @@ import com.codeborne.selenide.Condition;
 
 public class TextBox {
   String label;
-  String textBoxLocator = "//label[contains(.,'%s')]/following-sibling::div//div[@role='textbox' or @role='input']";
+  String textBoxLocator = "//label[contains(.,'%s')]/following-sibling::div//div[@role='textbox']";
 
   public TextBox(String label) {
     this.label = label;

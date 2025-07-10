@@ -6,7 +6,8 @@ import com.codeborne.selenide.Condition;
 
 public class TextInput {
   String label;
-  String textBoxLocator = ".//label[@for='%s']/following-sibling::textarea";
+  String textBoxLocator = ".//label[@for='%s']/following-sibling::textarea | .//label[@for='%s']/following-sibling::input"
+  ;
 
   public TextInput(String label) {
     this.label = label;
