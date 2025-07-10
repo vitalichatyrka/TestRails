@@ -14,6 +14,6 @@ public class TextInput {
   }
 
   public void enterSomeTextToTextInput(String someText) {
-    $x(String.format(textBoxLocator, label)).shouldBe(Condition.visible).sendKeys(someText);
+    $x(String.format(textBoxLocator, label, label)).shouldBe(Condition.visible).sendKeys(someText);
   }
 }
