@@ -16,4 +16,3 @@ public class TextBox {
     $$x(String.format(textBoxLocator, label)).filter(Condition.visible).first().sendKeys(someText);
   }
 }
-

@@ -4,7 +4,6 @@ import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
-import static org.aspectj.bridge.Version.getText;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
@@ -13,7 +12,6 @@ import lombok.extern.log4j.Log4j2;
 
 @Log4j2
 public class DashboardPage extends BasePage {
-
 
   private final String ADD_PROJECT_BUTTON_ID = "#sidebar-projects-add";
 
@@ -37,15 +35,15 @@ public class DashboardPage extends BasePage {
     return new AddProjectPage();
   }
 
-  @Step("Checking  the project is created")
+  @Step("Getting created project name")
   public String getCreatedProjectName(String projectName) {
-    log.info("Checking if the Project is created");
+    log.info("Getting created project name - {}", projectName);
     return $$(byText(projectName)).filter(Condition.visible).first().getText();
   }
 
   @Step("Opening  the project")
   public ProjectOverviewPage openProject(String projectName) {
-    log.info("Opening the Project");
+    log.info("Opening {} the Project", projectName);
     $$(byText(projectName)).filter(Condition.visible).first().click();
     return new ProjectOverviewPage();
   }

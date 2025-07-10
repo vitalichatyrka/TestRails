@@ -8,6 +8,7 @@ import lombok.Data;
 @Builder
 @Data
 public class TestCase {
+
   String title;
   String section;
   String template;

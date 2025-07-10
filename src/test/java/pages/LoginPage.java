@@ -73,5 +73,4 @@ public class LoginPage extends BasePage {
     log.info("Getting error message '{}'", requiredErrorMessage);
     return requiredErrorMessage;
   }
-
 }

@@ -17,7 +17,6 @@ public class AddTestCasePage extends BasePage {
   private final String ADD_TEST_CASE_XPATH = "//button[@id='accept']",
       TITLE_FIELD_ID = "#title";
 
-
   @Step("Opening the 'Add test case' page")
   public AddTestCasePage isPageOpened() {
     $x(ADD_TEST_CASE_XPATH).shouldBe(Condition.visible);

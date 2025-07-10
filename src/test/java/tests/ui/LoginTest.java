@@ -56,4 +56,3 @@ public class LoginTest extends BaseTest {
     assertEquals(loginPage.getErrorMessageAboutRequiredPassword(), loginPage.getPASSWORD_REQUIRED_ERROR());
   }
 }
-

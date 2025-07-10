@@ -3,7 +3,9 @@ package dto;
 import com.github.javafaker.Faker;
 
 public class TestCaseFactory {
+
   Faker faker = new Faker();
+
   public String title = faker.harryPotter().character();
   public String preconditions = faker.hitchhikersGuideToTheGalaxy().marvinQuote();
   public String steps = faker.beer().name();

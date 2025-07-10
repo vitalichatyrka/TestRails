@@ -8,7 +8,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import tests.BaseTest;
 
-
 public class TestCaseTest extends BaseTest {
 
   @Test
